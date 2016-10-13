@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>функция</title>
+  </head>
+  <body>
+    <script>
+        var x = prompt('please, enter value for "x"');
+        var n = prompt('please, enter value for "n"');
+        console.log('x='+x+'; '+'n='+n);
+
+        function pow (x,n) {
+      		var result =1;
+            if (n % 1 >0) {alert("Введи-ка целое число"); return}
+      			if (n>0){
+      				for (var i = 0; i<n;i++) { result *= x; }
+      			}
+      			if (n<0){
+      				for (var i = 0; i<-n;i++){ result /= x; }
+      			}
+      			return result;
+        }
+
+        console.log("calculate = ", pow(x, n));
+    </script>
+  </body>
+</html>

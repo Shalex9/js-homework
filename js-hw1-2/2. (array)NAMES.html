@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+        var names = prompt("Введите 5 любых имен через запятую", "");
+
+          if (names.length==0) {
+            alert("Если лень вводить 5 имен, то введите хотя-бы ОДНО!!!");
+          } else {
+          var arr = names.split(',');
+          var user = prompt("Введите имя пользователя", "");
+          alert(arr.indexOf(user) != -1 ? user + ", вы успешно вошли" : "Введите корректное имя");
+        }
+
+    </script>
+  </body>
+</html>

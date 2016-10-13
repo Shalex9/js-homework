@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>hw9-10</title>
+    <link rel="stylesheet" href="css/jquery.selectbox.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="jlider/jlider.css">
+    <link rel="stylesheet" href="css/css.css">
+
+    <script type="text/javascript" src="js/lib.js"></script>
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> -->
+    <script type="text/javascript" src="js/click-carousel.js"></script>
+    <script type="text/javascript" src="jlider.js"></script>
+    <script type="text/javascript" src="js/jquery.color.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
+    <script src="js/js.js"></script>
+
+  </head>
+  <body>
+      <div class="wrapper">
+        <header>
+          <div id="wrapper">
+          <div id="container">
+           <img src="img/img1.jpg" alt="Cuba" />
+           <img src="img/img2.jpg" alt="Cuba" />
+           <img src="img/img3.jpg" alt="Cuba" />
+           <img src="img/img4.jpg" alt="Cuba" />
+           <img src="img/img5.jpg" alt="Cuba" /></div>
+          <!-- container -->
+           <img id="carouselLeft" src="img/rightArr.png" alt="Left Arrow" />
+           <img id="carouselRight" src="img/leftArr.png" alt="Right Arrow" /></div>
+        </header>
+
+        <div class="NFS">
+          <ul class="jlider" id="jl2">
+            <li><img src="nfs/1.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 1"/></li>
+            <li><img src="nfs/2.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 2"/></li>
+            <li><img src="nfs/3.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 3"/></li>
+            <li><img src="nfs/8.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 4"/></li>
+            <li><img src="nfs/5.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 5"/></li>
+            <li><img src="nfs/6.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 6"/></li>
+            <li><img src="nfs/7.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 7"/></li>
+          </ul>
+        </div>
+
+        <div class="chekcbox">
+          <form action="#">
+            <div>
+              <label for="ch1">label 1</label>
+              <span class="niceCheck">
+                  <input type="checkbox" id="ch1"  value="on" tabindex="1">
+              </span>
+            </div>
+            <div>
+              <label for="ch2">label 2</label>
+              <span class="niceCheck niceChecked">
+                  <input type="checkbox" id="ch2" value="2" tabindex="2" checked>
+              </span>
+            </div>
+            <div>
+              <label for="ch3">label 3</label>
+              <span class="niceCheck niceChecked">
+                  <input type="checkbox" id="ch3"  value="on" tabindex="0" checked disabled>
+              </span>
+            </div>
+          </form>
+      </div>
+
+
+<!-- CHECKBOX CSS -->
+    <div class="checkboxCss">
+      <div>
+        <input type="checkbox" id="test-check1"</input>
+        <label for="test-check1">Чекбокс 1: </label>
+      </div>
+      <div>
+        <input type="checkbox" id="test-check2"</input>
+        <label for="test-check2">Чекбокс 2: </label>
+      </div>
+    </div>
+
+
+
+
+        <nav>
+            <ul class="List">
+              <li class="menu"><a href="#" class="menuLink">Nav1</a></li>
+              <li class="menu"><a href="#" class="menuLink">Nav2</a></li>
+              <li class="menu dropdown"><a href="#" class="menuLink">Nav3</a>
+                  <ul class="subList">
+                    <li class="submenu"><a href="#" class="submenuLink">Nav3.1</a></li>
+                    <li class="submenu subDropDown"><a href="#" class="submenuLink">Nav3.2</a>
+                        <ul class="subsubList">
+                          <li class="subsub"><a href="#" class="subsubmenuLink">Nav3.2.1</a></li>
+                          <li class="subsub"><a href="#" class="subsubmenuLink">Nav3.2.2</a></li>
+                          <li class="subsub"><a href="#" class="subsubmenuLink">Nav3.2.3</a></li>
+                          <li class="subsub"><a href="#" class="subsubmenuLink">Nav3.2.4</a></li>
+                          <li class="subsub"><a href="#" class="subsubmenuLink">Nav3.2.5</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu"><a href="#" class="submenuLink">Nav3.3</a></li>
+                    <li class="submenu"><a href="#" class="submenuLink">Nav3.4</a></li>
+                    <li class="submenu"><a href="#" class="submenuLink">Nav3.5</a></li>
+                  </ul>
+              </li>
+              <li class="menu"><a href="#" class="menuLink">Nav4</a></li>
+              <li class="menu"><a href="#" class="menuLink">Nav5</a></li>
+            </ul>
+        </nav>
+
+        <div class="fon">
+              <article class="select">
+                  <p> Выберите свой любимый цвет:</p>
+                  <select id="default-usage-select">
+                        <option value="--">Please select your favorite color</option>
+                        <option value="01">Red</option>
+                        <option value="02">Orange</option>
+                        <option value="03">Yellow</option>
+                        <option value="04">Green</option>
+                        <option value="05">Blue</option>
+                        <option value="06">Magenta</option>
+                        <option value="07">Violet</option>
+                        <option value="08">Ultra-violet</option>
+                  </select>
+                  <div class="clr"></div>
+              </article>
+
+          <!-- ДОПОЛНИТЕЛЬНЫЕ ЭКСПЕРИМЕНТЫ -->
+          <div class="boxfon">Наведи или кликни меня</div>
+          <div class="boxfonUI">Кликни по мне</div>
+          <div class="css">Кликни по мне</div>
+        </div>
+
+      </div>  <!-- wrapper -->
+
+  </body>
+</html>
