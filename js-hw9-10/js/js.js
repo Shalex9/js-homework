@@ -140,26 +140,17 @@ $(document).ready(function() {
 
 
 
-// МЕНЮ и боксы
+// МЕНЮ
 $(document).ready(function(){
     $(".dropdown")
-          .hover(
-              function() {$('.subList').slideDown(500)},
-              function() {$('.subList').slideUp(500)}
-          )
-          .mouseenter(function(){$('.subList').animate({backgroundColor: 'rgb(225, 75, 75)'},500, 'easeInOutQuint')})
-          .mouseleave(function(){$('.subList').animate({backgroundColor: 'rgb(225, 225, 75)'},500)});
-
-    // $(".subdropdown").mouseenter(function(){$('.subsubList').animate({backgroundColor: 'rgb(225, 75, 75)'},1000)});
-    // $(".subdropdown").mouseleave(function(){$('.subsubList').animate({backgroundColor: 'rgb(225, 0, 75)'},1000)});
+          .mouseenter(function(){$('.subList').slideDown(200).animate({backgroundColor: 'rgb(225, 75, 75)'},200, 'easeInOutQuint')})
+          .mouseleave(function(){$('.subList').slideUp(200).animate({backgroundColor: 'rgb(225, 225, 75)'},200)});
 
     $(".subDropDown")
-          .hover(
-              function() {$('.subsubList').slideDown(500)},
-              function() {$('.subsubList').slideUp(500)}
-          )
-          .mouseenter(function(){$('.subsubList').animate({backgroundColor: 'rgb(225, 75, 75)'},1000, 'easeOutExpo')})
-          .mouseleave(function(){$('.subsubList').animate({backgroundColor: 'rgb(0, 0, 75)'},1000)});
+          .mouseenter(function(){$('.subsubList').slideDown(200).animate({backgroundColor: 'rgb(225, 75, 75)'},200, 'easeOutExpo')})
+          .mouseleave(function(){$('.subsubList').slideUp(200).animate({backgroundColor: 'rgb(0, 0, 75)'},200)});
+
+
 
 // ДОПОЛНИТЕЛЬНЫЕ ЭКСПЕРИМЕНТЫ
     $(".boxfon").mouseenter(function(){$(this).animate({backgroundColor: '#fff'},500, 'easeInOutQuint')})
