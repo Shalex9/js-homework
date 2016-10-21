@@ -1,0 +1,22 @@
+http://joxi.ru/4AkQe5wu8Pwymq 
+
+
+    <script type="text/html" id='wrapper'>
+        <h2><%= title %></h2>
+
+            <% for (var i=0; i<questions.length; i++) { %>
+              <div>
+                <li class="spanQuestion"> №<%=i+1%> <%=questions[i]%> </li>
+                        <% for (var j=0; j<answers[i].length; j++) {%>
+                            <li  class="blockdiv block<%=[i+1]%>_<%=[j+1]%>">
+                              <input type="checkbox" class="check" id="id_<%=[i+i+1]%>">
+                              <label for="id_<%=[i+1]%>_<%=[j+1]%>" class="text"> №<%=j+1%> <%=answers[i][j] %> </label>
+                            </li>
+
+            <% }; %>
+              </div>
+            <% }; %>
+
+        <input type="submit" value="Проверить результаты" id="result">
+    </script>
+</html>
