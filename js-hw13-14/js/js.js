@@ -3,14 +3,13 @@
 // массив вопросов и ответов
 var test = {
   title: "Тест по программированию",
-  questions: ["Вопрос №1","Вопрос №2","Вопрос №3"],
-  answers : [["Вариант ответа №1","Вариант ответа №2","Вариант ответа №3"],
-  ["Вариант ответа №1","Вариант ответа №2","Вариант ответа №3"],
-  ["Вариант ответа №1","Вариант ответа №2","Вариант ответа №3"]],
-  right:[1,2,1],
+  questions: ["В каком году крестили Русь?","Кто открыл Америку?","Сколько элементов в таблице Менделеева?"],
+  answers : [["988г","998г","1991г"],
+  ["Джордж Вашингтон","Христофор Колумб","Галилео Галилей"],
+  ["113","118","126", "133"]],
+  variant: ["a", "b", "c", "d"]
 }
     console.log("test: ", test);
-
 
 // Преобразовываем в JSON формат и обратно и записываем в локальное хранилище
 var genString = JSON.stringify(test);
@@ -22,7 +21,6 @@ genString = localStorage.getItem('str');
 var genSubj = JSON.parse(genString);
     console.log("JSON.parse: ", genSubj);
 
-
 // Используем jQuery и шаблонизатор
 $(function(){
   var content = document.getElementById('content');
@@ -30,14 +28,22 @@ $(function(){
 });
 
 // Проверка результатов
-// var $ques1 = $('.all');
-// var $ques2 = $(".block2").find('input');
-// var $ques2 = $(".block3").find('input');
-//   console.log($ques1);
-// $('#result').on('click', function () {
-//     event.preventDefault();
-//     if($($ques1).prop('checked')) {
-//       alert("Вы прошли тест");
-//
-//     };
-// });
+$(function(){
+  var answers = [
+    [true,false,false],
+    [false,true,false],
+    [false,false,true,false] ];
+  $("#result").click(function(){
+      var current,k,flag="Тест пройден";
+      for (var i=0;i<3;i++){
+        k=i+1;
+        current ="#block"+ k +" input";
+        $(current).each(function(j) {   //просматриваем все инпуты в блоке.
+          // console.log("Выбран чекбокс"+[k]+":", $(current).eq(j)[0].checked); //выводим информацию - выбран ли чекбокс.
+          // console.log("Правильный ответ:", answers[i][j]);  // выводим информацию -
+          if ($(current).eq(j)[0].checked!=answers[i][j]){flag = "Опаньки! Тест провален!";} //если хоть один ответ не совпадает - значит ошибка
+        })
+      }
+      alert(flag);
+  });
+});
