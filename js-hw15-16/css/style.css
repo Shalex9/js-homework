@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+#logo{
+  text-align: center;
+}
+#logo img{
+  margin-top: 112px;
+  height: 92px;
+  width: 272px;
+}
+#logo p{
+  color: #4285f4;
+  font-size: 16px;
+  left: 79px;
+  position: relative;
+  top: -20px;
+  white-space: nowrap;
+  width: 0;
+  margin: 0 auto;
+}
+#search{
+  text-align: center;
+  }
+#search input{
+  width: 670px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #fff;
+  border: 1px solid rgb(185,185,185);
+  border-radius: 1px;
+  border-top-color: rgb(160,160,160);
+  cursor: text;
+  padding-left: 10px;
+}
+#search input::-webkit-input-placeholder {font-size: 18px;}
+             ::-moz-placeholder          {font-size: 18px;}/* Firefox 19+ */
+             :-moz-placeholder           {font-size: 18px;}/* Firefox 18- */
+             :-ms-input-placeholder      {font-size: 18px;}
+#searchButton{
+  display: block;
+  width: 300px;
+  height: 30px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+#boxForRezult{border:solid 1px #999; margin:5px; padding:10px}
+#boxForRezult img {border: 3px solid gray; margin: 10px; max-width: 150px; max-height: 150px;}

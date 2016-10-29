@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+      integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+      crossorigin="anonymous">
+  </script>
+  <script src="js/shablonizator.js"></script>
+  <script src="js/js.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="logo">
+    <img src="img/googlelogo.png" alt="">
+    <p> By Shalex </p>
+  </div>
+
+  <form name="search" id="search" action="index.html" method="post">
+    <input type="text" name="name" placeholder="Че искать будем?">
+    <button id="searchButton" type="button" name="button">Искать</button>
+  </form>
+
+  <div id="boxForRezult">
+
+  </div>
+
+  <script type="text/html" id='wrapper'>
+      <h2><%= title %></h2>
+      <% for (var i=0; i<questions.length; i++) { %>
+        <div id="block<%=[i+1]%>">
+          <h3 class="question"> №<%=i+1%> <%=questions[i]%> </h3>
+          <% for (var j=0; j<answers[i].length; j++) {%>
+            <label for="id<%=[i+1]%>_<%=[j+1]%>" class="inputBlock">
+              <input type= checkbox class="check" id="id<%=[i+1]%>_<%=[j+1]%>"> <%= variant[j]%>) <%=answers[i][j] %>
+            </label>
+          <% }; %>
+        </div>
+      <% }; %>
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Human</title>
+</head>
+<body>
+  <p>
+    СМОТРИ В КОНСОЛЬ!
+  </p>
+  <script type="text/javascript">
+    var human={
+      name:'Vasya',
+      year: 18,
+      sex: "male",
+      rost: "185sm",
+      ves: "85kg"
+    }
+    function worker(){
+      this.rabota= "fullSteck",
+      this.zarplata= "4000$",
+      this.rabotat = function () {alert("rabotat")}
+    }
+    function student(){
+      this.ycheba= "KPI",
+      this.stipendiya= "1000grn",
+      this.smotret = function () {alert("smotret serialu")}
+    }
+    worker.__proto__ = human;
+    student.__proto__ = human;
+
+    worker.prototype = human;
+    student.prototype = human;
+
+    var worker1 = new worker();
+      worker1(){oputRabotu="1 year"};
+    var worker2 = new worker();
+      worker2.oputRabotu="2 years";
+    var worker3 = new worker();
+      worker3.oputRabotu="3 years";
+
+    var student1 = new student();
+      student1.otychilsya="1 year";
+    var student2 = new student();
+      student2.otychilsya="2 years";
+    var student3 = new student();
+      student3.otychilsya="3 years";
+
+    console.log(worker1);
+    console.log("worker1.name:", worker1.name);
+    console.log(worker2);
+    console.log("worker2.sex:", worker1.sex);
+    console.log(worker3);
+    console.log("worker3.ves:", worker1.ves);
+    console.log(student1);
+    console.log("student1.name:", student1.name);
+    console.log(student2);
+    console.log("student2.year:", student1.year);
+    console.log(student3);
+    console.log("student3.rost:", student1.rost);
+  </script>
+</body>
+</html>
