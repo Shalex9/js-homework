@@ -29,17 +29,12 @@
   </div>
 
   <script type="text/html" id='wrapper'>
-      <h2><%= title %></h2>
-      <% for (var i=0; i<questions.length; i++) { %>
-        <div id="block<%=[i+1]%>">
-          <h3 class="question"> №<%=i+1%> <%=questions[i]%> </h3>
-          <% for (var j=0; j<answers[i].length; j++) {%>
-            <label for="id<%=[i+1]%>_<%=[j+1]%>" class="inputBlock">
-              <input type= checkbox class="check" id="id<%=[i+1]%>_<%=[j+1]%>"> <%= variant[j]%>) <%=answers[i][j] %>
-            </label>
-          <% }; %>
-        </div>
-      <% }; %>
+    <div class="info">
+      <h3><% for (var i=0; i<title.length; i++) { %><%= title[i] %><% }; %></h3>
+      <h5><span class="text">Author: </span><% for (var i=0; i<author.length; i++) { %><%= author[i] %><% }; %></h5>
+      <h5><span class="text">Link: </span><% for (var i=0; i<link.length; i++) { %><%= link[i] %><% }; %></h5>
+      <h5><span class="text">Date: </span><% for (var i=0; i<date_taken.length; i++) { %><%= date_taken[i] %><% }; %></h5>
+    </div>
   </script>
 </body>
 </html>

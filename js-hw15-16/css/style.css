@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 #logo{
   text-align: center;
@@ -46,4 +47,15 @@ body{
   cursor: pointer;
 }
 #boxForRezult{border:solid 1px #999; margin:5px; padding:10px}
-#boxForRezult img {border: 3px solid gray; margin: 10px; max-width: 150px; max-height: 150px;}
+#boxForRezult img {border: 3px solid gray; margin: 10px; max-width: 200px; max-height: 200px;}
+h3,h5{margin: 0}
+.info{
+  max-width: 200px;
+  word-wrap: break-word;
+  margin: 10px;
+  text-align: center;
+}
+.text{color: red}
+/*.foto{
+  float: left;
+}*/

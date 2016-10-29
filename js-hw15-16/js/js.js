@@ -6,28 +6,20 @@ $(function () {
     }
     return false;
   }
-  // document.forms['search'].onsubmit=function(e){e.preventDefault(); alert('hello')}
+  // document.forms['search'].onsubmit=function(e){e.preventDefault(); alert('hello')}   //второй вариант
   var parse;
   $('#searchButton').click (function () {
       var poisk = $("#search input").val();
-      console.log(poisk);
+      // console.log(poisk);
       $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+poisk+"&tagmode=any&format=json&jsoncallback=?",
         function(data){
-        console.log(data);
+        // console.log(data);
             $.each(data.items, function(i,item){
-              $("<img/>").attr("src", item.media.m).appendTo("#boxForRezult");
-              var obj = JSON.stringify(item);
-              console.log(obj);
-              parse = JSON.parse(obj);
-              console.log(parse);
-              if ( i == 9 ) return false;
+              $("<img/>").attr("src", item.media.m).attr("class", "foto").appendTo("#boxForRezult");
+              if ( i == 3 ) {return false}  // с шаблонизатором не реагирует на эту строку и выхаёт всего один результат
+              else {document.getElementById('boxForRezult').innerHTML = tmpl("wrapper", item)}  // если закоммитить эту строку то будет выдавать нужное количество картинок но без текста
             });
         });
-      });
-
-      $(function(){
-        var content = document.getElementById('boxForRezult');
-        content.innerHTML = tmpl("wrapper", parse);
-      });
+    });
 
 });
