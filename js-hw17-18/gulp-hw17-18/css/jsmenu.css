@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  margin: 0 auto;
+}
+
+/*ANIMATION MENU*/
+nav {
+background: red;
+}
+nav a {
+text-decoration: none;
+color: white;
+font-size: 16px;
+line-height: 40px;
+}
+nav li {
+list-style-type: none;
+position: relative;
+vertical-align: text-top;
+}
+nav a:hover {color: black;}
+  nav>ul {
+    height: 60px;
+    width: 1000px;
+    margin: 0 auto;
+  }
+      nav .menu {
+        display: inline-block;
+        margin-top: 10px;
+      }
+      nav .menuLink {
+        margin: 12px;
+        padding: 12px;
+      }
+      nav .menu .subList {
+        display: none;
+        background: rgb(225, 225, 75);
+        position: absolute;
+        top: 40px;
+        left: -10px;
+        width: 170px;
+        padding-left: 0;
+        z-index: 2;
+      }
+      .dropdown {
+        background-image: url('../img/down.png');
+        background-repeat: no-repeat;
+        background-position: 65px 12px;
+        background-size: 16px 16px;
+      }
+
+      nav .menu .subList .submenu {margin: auto 12px;}
+      nav .menu .subList .submenu:not(:last-child),
+      nav .menu .subList .subsub:not(:last-child) {border-bottom: 1px solid red;}
+      nav .menu .subList .submenu:nth-child(2) {
+        background-image: url('../../img/right.png');
+        background-repeat: no-repeat;
+        background-position: 134px 12px;
+        background-size: 16px 16px;
+      }
+      nav .menu .subList a {display: block;}
+
+        nav .menu .subList .submenu {display: block;}
+        nav .menu .subsubList {
+          display: none;
+          position: absolute;
+          left: 145px;
+          top: 0px;
+          width: 170px;
+          background: rgb(0, 0, 75);
+          padding: 0;
+          z-index: 5;
+        }
+            nav .menu .subList .subsub {
+              display: block;
+              margin: auto 22px;
+            }
+        nav .menu .lastList {
+            display: none;
+        }
+.menu.open .subList {display: block;}
