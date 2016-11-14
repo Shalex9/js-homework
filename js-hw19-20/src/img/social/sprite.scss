@@ -1,0 +1,195 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$facebook-b-name: 'facebook-b';
+$facebook-b-x: 0px;
+$facebook-b-y: 41px;
+$facebook-b-offset-x: 0px;
+$facebook-b-offset-y: -41px;
+$facebook-b-width: 8px;
+$facebook-b-height: 16px;
+$facebook-b-total-width: 17px;
+$facebook-b-total-height: 153px;
+$facebook-b-image: 'sprite.png';
+$facebook-b: (0px, 41px, 0px, -41px, 8px, 16px, 17px, 153px, '../img/social/sprite.png', 'facebook-b', );
+$facebook-name: 'facebook';
+$facebook-x: 0px;
+$facebook-y: 57px;
+$facebook-offset-x: 0px;
+$facebook-offset-y: -57px;
+$facebook-width: 8px;
+$facebook-height: 16px;
+$facebook-total-width: 17px;
+$facebook-total-height: 153px;
+$facebook-image: 'sprite.png';
+$facebook: (0px, 57px, 0px, -57px, 8px, 16px, 17px, 153px, '../img/social/sprite.png', 'facebook', );
+$linkedin-b-name: 'linkedin-b';
+$linkedin-b-x: 0px;
+$linkedin-b-y: 73px;
+$linkedin-b-offset-x: 0px;
+$linkedin-b-offset-y: -73px;
+$linkedin-b-width: 16px;
+$linkedin-b-height: 16px;
+$linkedin-b-total-width: 17px;
+$linkedin-b-total-height: 153px;
+$linkedin-b-image: 'sprite.png';
+$linkedin-b: (0px, 73px, 0px, -73px, 16px, 16px, 17px, 153px, '../img/social/sprite.png', 'linkedin-b', );
+$linkedin-name: 'linkedin';
+$linkedin-x: 0px;
+$linkedin-y: 89px;
+$linkedin-offset-x: 0px;
+$linkedin-offset-y: -89px;
+$linkedin-width: 16px;
+$linkedin-height: 16px;
+$linkedin-total-width: 17px;
+$linkedin-total-height: 153px;
+$linkedin-image: 'sprite.png';
+$linkedin: (0px, 89px, 0px, -89px, 16px, 16px, 17px, 153px, '../img/social/sprite.png', 'linkedin', );
+$rss-b-name: 'rss-b';
+$rss-b-x: 0px;
+$rss-b-y: 105px;
+$rss-b-offset-x: 0px;
+$rss-b-offset-y: -105px;
+$rss-b-width: 16px;
+$rss-b-height: 16px;
+$rss-b-total-width: 17px;
+$rss-b-total-height: 153px;
+$rss-b-image: 'sprite.png';
+$rss-b: (0px, 105px, 0px, -105px, 16px, 16px, 17px, 153px, '../img/social/sprite.png', 'rss-b', );
+$rss-name: 'rss';
+$rss-x: 0px;
+$rss-y: 26px;
+$rss-offset-x: 0px;
+$rss-offset-y: -26px;
+$rss-width: 16px;
+$rss-height: 15px;
+$rss-total-width: 17px;
+$rss-total-height: 153px;
+$rss-image: 'sprite.png';
+$rss: (0px, 26px, 0px, -26px, 16px, 15px, 17px, 153px, '../img/social/sprite.png', 'rss', );
+$skype-b-name: 'skype-b';
+$skype-b-x: 0px;
+$skype-b-y: 121px;
+$skype-b-offset-x: 0px;
+$skype-b-offset-y: -121px;
+$skype-b-width: 16px;
+$skype-b-height: 16px;
+$skype-b-total-width: 17px;
+$skype-b-total-height: 153px;
+$skype-b-image: 'sprite.png';
+$skype-b: (0px, 121px, 0px, -121px, 16px, 16px, 17px, 153px, '../img/social/sprite.png', 'skype-b', );
+$skype-name: 'skype';
+$skype-x: 0px;
+$skype-y: 137px;
+$skype-offset-x: 0px;
+$skype-offset-y: -137px;
+$skype-width: 16px;
+$skype-height: 16px;
+$skype-total-width: 17px;
+$skype-total-height: 153px;
+$skype-image: 'sprite.png';
+$skype: (0px, 137px, 0px, -137px, 16px, 16px, 17px, 153px, '../img/social/sprite.png', 'skype', );
+$twitter-b-name: 'twitter-b';
+$twitter-b-x: 0px;
+$twitter-b-y: 0px;
+$twitter-b-offset-x: 0px;
+$twitter-b-offset-y: 0px;
+$twitter-b-width: 17px;
+$twitter-b-height: 13px;
+$twitter-b-total-width: 17px;
+$twitter-b-total-height: 153px;
+$twitter-b-image: 'sprite.png';
+$twitter-b: (0px, 0px, 0px, 0px, 17px, 13px, 17px, 153px, '../img/social/sprite.png', 'twitter-b', );
+$twitter-name: 'twitter';
+$twitter-x: 0px;
+$twitter-y: 13px;
+$twitter-offset-x: 0px;
+$twitter-offset-y: -13px;
+$twitter-width: 17px;
+$twitter-height: 13px;
+$twitter-total-width: 17px;
+$twitter-total-height: 153px;
+$twitter-image: 'sprite.png';
+$twitter: (0px, 13px, 0px, -13px, 17px, 13px, 17px, 153px, '../img/social/sprite.png', 'twitter', );
+$spritesheet-width: 17px;
+$spritesheet-height: 153px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($facebook-b, $facebook, $linkedin-b, $linkedin, $rss-b, $rss, $skype-b, $skype, $twitter-b, $twitter, );
+$spritesheet: (17px, 153px, 'sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

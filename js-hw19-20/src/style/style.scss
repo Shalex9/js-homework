@@ -1,0 +1,627 @@
+@import "variables";
+@import "../img/social/sprite";
+@import "../img/brands/brandsSprite";
+@import "../img/footer/footerSprite";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: 'Ubuntu Condensed', sans-serif;
+  // font-family: 'Ubuntu', sans-serif;
+}
+@font-face {
+  font-family: 'Ubuntu-Medium';
+  font-style: normal;
+  font-weight: 700;
+  src: url("Ubuntu-Medium.ttf") format('ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url("Ubuntu-Light.ttf") format('ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu Condensed Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("UbuntuCondensed-Regular.ttf") format('ttf');
+}
+
+
+header{
+  width: $fullDisplay;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header__logo{
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    &__logoText{
+      margin-left: 10px;
+      &__h3{
+        color: #434343;
+        font-family: $UbMed;
+        font-size: 26px;
+      }
+      &__h5{
+        color: #7a7a7a;
+        font-family: 'Ubuntu-Light', sans-serif;
+        font-size: 11px;
+      }
+    }
+  }
+  .header__social{
+    float: right;
+    a{
+      display: inline-block;
+      margin-left: 20px;
+    }
+    &__facebook{@include sprite($facebook); &:hover{@include sprite($facebook-b)}}
+    &__twitter{@include sprite($twitter); &:hover{@include sprite($twitter-b)}}
+    &__rss{@include sprite($rss); &:hover{@include sprite($rss-b)}}
+    &__linkedin{@include sprite($linkedin); &:hover{@include sprite($linkedin-b)}}
+    &__skype{@include sprite($skype); &:hover{@include sprite($skype-b)}}
+  }
+  .clearfix{
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+  }
+}  //end header
+
+.menu {
+    width: $fullDisplay;
+    height: 45px;
+    background-color: #2a2d32;
+    margin: $center;
+    &__ul{
+      float: left;
+      &__li{
+        display: inline-block;
+        width: 125px;
+        &__a{
+          color: #fff;
+          text-decoration: none;
+          border-right: 1px solid black;
+          display: block;
+          line-height: 45px;
+          text-align: center;
+          font-size: 12px;
+          &:hover{
+            color: orange;
+          }
+          &:active{
+            background-color: #248cec;
+          }
+        }
+      }
+    }
+    &__search{
+      float: right;
+      line-height: 45px;
+      position: relative;
+      &__input {
+      	width: 300px;
+      	font-size: 13px;
+      	padding: 6px 0 4px 10px;
+      	border: 1px solid black;
+      	background: #35383c;
+      	border-radius: 1px;
+        color: #57595c;
+        margin-right: 10px;
+      }
+      &__img{
+        position: absolute;
+        left: 278px;
+        top: 15px;
+        cursor: pointer;
+      }
+    }
+  } //end nav
+
+.firstArticle{
+  width: $fullDisplay;
+  margin: $center;
+  &__slider{
+    position: relative;
+    height: 473px;
+    width: $fullDisplay;
+    overflow: hidden;
+    margin-top: 30px;
+    float: left;
+    &__arrow-left{
+      width: 60px;
+      height: 82px;
+      background: url(../img/arrows.png) 0px 0px no-repeat;
+      position: absolute;
+      top: 180px;
+      &:hover{
+        cursor: pointer;
+        background: url(../img/arrows.png) 0px -86px no-repeat;
+      }
+    }
+    &__arrow-right{
+      width: 60px;
+      height: 82px;
+      background: url(../img/arrows.png) -60px 0px no-repeat;
+      position: absolute;
+      top: 180px;
+      left: 1100px;
+      &:hover{
+        cursor: pointer;
+        background: url(../img/arrows.png) -60px -86px no-repeat;
+      }
+    }
+    &__list{
+      list-style: none;
+      width: 10000px;
+      padding: 0;
+      position: absolute;
+      &__element{
+        display: block;
+        margin-right: 25px;
+        float: left;
+        &__img{
+          // max-width: 1160px;
+          margin-top: -205px;
+          margin-left: -75px;
+        }
+      }
+    }
+    &__text{
+      position: absolute;
+      top:220px;
+      left:70px;
+      font-size: 54px;
+      font-family: $UbMed;
+      color: #fff;
+
+      &__build{
+        color: #f4b60d;
+        background: rgba(0, 0, 0, .7);
+        width: 200px;
+        padding: 15px 25px 0px;
+      }
+      &__busines{
+        background: rgba(0, 0, 0, .7);
+        width: 285px;
+        padding: 0px 25px 15px;
+      }
+    }
+  }
+  &__clearfix{
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+  }
+  &__ourPlusses{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &__num{
+      font-size: 90px;
+      font-family: $UbMed;
+      color: #e9e9ea;
+      margin-top: -15px;
+    }
+    &__info{
+      width: 240px;
+      &__img{
+        height: 30px;
+      }
+      &__h5{
+        font-size: 20px;
+        font-family: $UbMed;
+        color: #000;
+      }
+      &__text{
+        color: #9d9d9d;
+        font-family: Arial, serif;
+        font-size: 13px;
+        margin: 20px auto;
+      }
+      &__link{
+        font-size: 13px;
+        font-family: $UbMed;
+        color: #000;
+        font-weight: bold;
+        &:hover{
+          color: #3695ec;
+        }
+        &__img{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+} //end .firstArticle
+
+.ourServices{
+  height: 450px;
+  background: #2a2d32;
+  &__content{
+    width: $fullDisplay;
+    margin: $center;
+    &__p{
+      font-size: 24px;
+      font-family: $UbMed;
+      color: #fff;
+      padding-top: 35px;
+      padding-bottom: 30px;
+    }
+    &__item{
+      display: flex;
+      justify-content: space-between;
+      &__items{
+        &__img{
+          // background-color: rgba(54, 149, 236, 0.3);
+          width: 250px;
+          height: 230px;
+          overflow: hidden;
+          display: block;
+          &__picture{
+            position: relative;
+            &__1,&__2,&__3,&__4{
+              z-index: 5;
+              position: absolute;;
+              &:hover{
+                z-index: 1;
+                position: absolute;;
+              }
+            }
+            &__1{
+              margin-left: -175px;
+            }
+            &__2{
+              margin-left: -115px;
+              margin-top: -35px;
+            }
+            &__3{
+              margin-top: -15px;
+            }
+            &__4{
+              margin-left: -60px;
+            }
+            &__blue{
+              z-index: 3;
+              margin-top: -15px;
+              margin-left: -5px;
+              position: absolute;;
+
+            }
+          }
+        }
+        &__a{
+          display: block;
+          text-align: center;
+          font-size: 16px;
+          font-family: $UbMed;
+          color: #fff;
+          padding: 15px;
+          text-decoration: none;
+          &:hover{
+            color: orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+.news{
+  height: 460px;
+  background: #f7f7f7;
+  &__block{
+    width: $fullDisplay;
+    margin: $center;
+    &__blockLeft{
+      float: left;
+      width: 550px;
+      &__h3{
+        font-size: 24px;
+        font-family: $UbMed;
+        color: #2a2d32;
+        padding-top: 40px;
+      }
+      &__table{
+        margin-top: 30px;
+        &__tr1{
+          height: 170px;
+          vertical-align: top;
+          &__td1{
+            position: relative;
+            &__news1{
+              width: 140px;
+              height: 140px;
+              background: url('../img/news1.jpg');
+              background-position: -90px 0px;
+              background-size: 175%;
+            }
+            &__month{
+              position: absolute;
+              top: 10px;
+              left: -20px;
+              color: #fff;
+              background-color: #248cec;
+              width: 40px;
+              height: 40px;
+              font-size: 15px;
+              font-family: $UbMed;
+              text-align: center;
+              line-height: 40px;
+            }
+            &__day{
+              position: absolute;
+              top: 50px;
+              left: -20px;
+              color: #000;
+              background-color: #f4b60d;
+              width: 40px;
+              height: 40px;
+              font-size: 18px;
+              font-family: $UbMed;
+              text-align: center;
+              line-height: 40px;
+            }
+          }
+          &__td2{
+            padding-left: 30px;
+            &__link{
+              text-decoration: none;
+              color: #000;
+              font-size: 18px;
+              font-family: $UbMed;
+              &:hover{
+                color: #248cec;
+              }
+            }
+            &__p{
+              color: #9d9d9d;
+              margin-top: 5px;
+              &__author{
+                color: #248cec;
+              }
+              &__comments{
+                color: #248cec;
+              }
+            }
+            &__text{
+              color: #9d9d9d;
+              font-family: Arial, serif;
+              font-size: 14px;
+              margin-top: 25px;
+            }
+          }
+        } //end   tr1
+        &__tr2{
+          height: 170px;
+          vertical-align: top;
+          &__td1{
+            position: relative;
+            &__news2{
+              width: 140px;
+              height: 140px;
+              background: url('../img/news2.jpg');
+              background-position: -3px -12px;
+              background-size: 110%;
+            }
+            &__month{
+              position: absolute;
+              top: 10px;
+              left: -20px;
+              color: #fff;
+              background-color: #248cec;
+              width: 40px;
+              height: 40px;
+              font-size: 15px;
+              font-family: $UbMed;
+              text-align: center;
+              line-height: 40px;
+            }
+            &__day{
+              position: absolute;
+              top: 50px;
+              left: -20px;
+              color: #000;
+              background-color: #f4b60d;
+              width: 40px;
+              height: 40px;
+              font-size: 18px;
+              font-family: $UbMed;
+              text-align: center;
+              line-height: 40px;
+            }
+          }
+          &__td2{
+            padding-left: 30px;
+            &__link{
+              text-decoration: none;
+              color: #000;
+              font-size: 18px;
+              font-family: $UbMed;
+              &:hover{
+                color: #248cec;
+              }
+            }
+            &__p{
+              color: #9d9d9d;
+              margin-top: 5px;
+              &__author{
+                color: #248cec;
+              }
+              &__comments{
+                color: #248cec;
+              }
+            }
+            &__text{
+              color: #9d9d9d;
+              font-family: Arial, serif;
+              font-size: 14px;
+              margin-top: 25px;
+            }
+          }
+        }  //end   tr2
+      } //end   table
+    } // end blockLeft
+
+    &__blockRight{
+      width: 550px;
+      float: right;
+      &__h3{
+        font-size: 24px;
+        font-family: $UbMed;
+        color: #000;
+        padding-top: 40px;
+      }
+      &__accordion{
+        margin-top: 30px;
+        &__title{
+          display: flex;
+          justify-content: flex-start;
+          height: 30px;
+          width: 100%;
+          border: 1px solid #cfcfcf;
+          background: #fff;
+          margin-bottom: 10px;
+          line-height: 30px;
+          &__plusMinus{
+            width: 30px;
+            border-right: 1px solid #cfcfcf;
+            padding-left: 10px;
+            font-weight: bold;
+          }
+          .activePlus{
+            border-right: none;
+          }
+          &__h3{
+            font-size: 14px;
+            font-family: $UbMed;
+            font-weight: bold;
+            color: #2a2d32;
+            padding-left: 25px;
+          }
+        }
+        .active{
+          background: #f4b60d;
+        }
+        &__p{
+          font-size: 13px;
+          font-family: Arial, serif;
+          color: #9d9d9d;
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+      }  // end accordion
+    }  // end blockRight
+  }  // end block
+}  // end news__block
+
+.brands{
+  width: $fullDisplay;
+  height: 150px;
+  margin: $center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__1{@include sprite($brand1)}
+  &__2{@include sprite($brand2)}
+  &__3{@include sprite($brand3)}
+  &__4{@include sprite($brand4)}
+  &__5{@include sprite($brand5)}
+  &__6{@include sprite($brand6)}
+}
+
+.footer{
+  background: #2a2d32;
+  height: 280px;
+  &__content{
+    width: $fullDisplay;
+    margin: $center;
+    display: flex;
+    justify-content: space-between;
+    &__socials,
+    &__links,
+    &__blogroll,
+    &__aboutUs{
+      width: 250px;
+      // display: flex;
+      // align-items: flex-start;
+    }
+    &__socials__h4,
+    &__links__h4,
+    &__blogroll__h4,
+    &__aboutUs__h4{
+      font-size: 16px;
+      font-family: $UbMed;
+      color: #fff;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    &__socials__a,
+    &__links__a,
+    &__blogroll__a,
+    &__aboutUs__a{
+      text-decoration: none;
+      font-size: 14px;
+      font-family: Arial, serif;
+      color: #828385;
+      display: block;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      &:hover{
+        color: #2582da;
+      }
+      &:not(:last-child){
+        border-bottom: 2px solid #393c40;
+      }
+    }
+  } //end content
+  &__end{
+    height: 50px;
+    background: #35383c;
+    &__content{
+      width: $fullDisplay;
+      margin: $center;
+      line-height: 50px;
+      display: flex;
+      justify-content: space-between;
+      &__info{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        &__location{@include sprite($location)}
+        &__phone{@include sprite($phone)}
+        &__email{@include sprite($email)}
+        &__adress,
+        &__call,
+        &__mail{
+          text-decoration: none;
+          font-size: 12px;
+          font-family: Arial, serif;
+          color: #868789;
+          padding-right: 40px;
+          padding-left: 10px;
+        }
+      }
+      &__copyright{
+        text-decoration: none;
+        font-size: 12px;
+        font-family: Arial, serif;
+        color: #868789;
+        float: right;
+      }
+    }
+  }
+} //end footer
