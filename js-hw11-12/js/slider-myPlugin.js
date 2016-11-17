@@ -7,7 +7,7 @@
           backgroundColor: 'white',
           maxWidth: '250px'
         };
-        
+
         var settings = $.extend(defaults, options);
 
         $('.carousel-element img').css({
