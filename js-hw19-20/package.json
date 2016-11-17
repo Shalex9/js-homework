@@ -9,10 +9,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.18.0",
     "browser-sync": "^2.17.5",
     "compass": "^0.1.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
     "gulp-clean-css": "^2.0.13",
     "gulp-imagemin": "^3.1.1",
     "gulp-minify-css": "^1.2.4",

@@ -95,6 +95,7 @@ gulp.task('sprite', function () {
   return spriteData.pipe(gulp.dest('src/img/social/'));
 });
 
+
 gulp.task('build', [
     'html:build',
     'js:build',
