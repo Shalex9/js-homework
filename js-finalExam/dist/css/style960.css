@@ -1,0 +1,118 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+.header {
+  height: 700px; }
+  .header__content {
+    width: 940px; }
+    .header__content__menu {
+      padding-top: 38px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .header__content__menu__logo {
+        font-size: 20px;
+        padding-top: 5px; }
+      .header__content__menu__list__item {
+        font-size: 14px;
+        margin-right: 1px; }
+        .header__content__menu__list__item:first-child {
+          margin-right: -3px; }
+    .header__content__textBox {
+      width: 505px;
+      margin-top: 143px; }
+      .header__content__textBox__title {
+        font-size: 50px;
+        line-height: 61px; }
+      .header__content__textBox__text {
+        font-size: 24px;
+        margin-top: 25px; }
+      .header__content__textBox__button {
+        font-size: 14px;
+        width: 220px;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 34px; }
+
+.howItWorks__content {
+  width: 940px;
+  margin: 0 auto; }
+  .howItWorks__content__title {
+    font-size: 22px;
+    margin-top: 95px; }
+  .howItWorks__content__steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 34px; }
+    .howItWorks__content__steps__step1, .howItWorks__content__steps__step2, .howItWorks__content__steps__step3 {
+      width: 300px;
+      height: 400px; }
+      .howItWorks__content__steps__step1__content, .howItWorks__content__steps__step2__content, .howItWorks__content__steps__step3__content {
+        padding: 19px;
+        padding-top: 153px; }
+        .howItWorks__content__steps__step1__content__info, .howItWorks__content__steps__step2__content__info, .howItWorks__content__steps__step3__content__info {
+          height: 175px; }
+          .howItWorks__content__steps__step1__content__info__button, .howItWorks__content__steps__step2__content__info__button, .howItWorks__content__steps__step3__content__info__button {
+            font-size: 10px;
+            width: 70px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 10px; }
+          .howItWorks__content__steps__step1__content__info__title, .howItWorks__content__steps__step2__content__info__title, .howItWorks__content__steps__step3__content__info__title {
+            font-size: 24px;
+            padding-top: 17px; }
+          .howItWorks__content__steps__step1__content__info__text, .howItWorks__content__steps__step2__content__info__text, .howItWorks__content__steps__step3__content__info__text {
+            font-size: 14px;
+            padding-top: 14px; }
