@@ -6,6 +6,19 @@ $(document).ready(function(){
       $(this).find(".firstArticle__slider__nav__outside__inside").css("display", "block");
       $(this).siblings(".firstArticle__slider__nav__outside").find(".firstArticle__slider__nav__outside__inside").css("display", "none")
   });
+  $(".firstArticle__slider__list__element__img1").css("opacity", "1");
+  $(".firstArticle__slider__nav__outside:first").click(function() {
+      $(".firstArticle__slider__list__element__img1").animate({opacity: "1"}, 1200);
+      $(".firstArticle__slider__list__element__img2, .firstArticle__slider__list__element__img3").animate({opacity: "0"}, 1200);
+  });
+  $(".firstArticle__slider__nav__outside:nth-child(2)").click(function() {
+      $(".firstArticle__slider__list__element__img2").animate({opacity: "1"}, 1200);
+      $(".firstArticle__slider__list__element__img1, .firstArticle__slider__list__element__img3").animate({opacity: "0"}, 1200);
+  });
+  $(".firstArticle__slider__nav__outside:last-child").click(function() {
+      $(".firstArticle__slider__list__element__img3").animate({opacity: "1"}, 1200);
+      $(".firstArticle__slider__list__element__img1, .firstArticle__slider__list__element__img2").animate({opacity: "0"}, 1200);
+  });
   // END Slider
 
   // Голубой фон при наведении на картинки

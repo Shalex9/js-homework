@@ -140,17 +140,25 @@ header{
     float: left;
     &__list{
       list-style: none;
-      width: 10000px;
-      padding: 0;
-      position: absolute;
       &__element{
         display: block;
-        margin-right: 25px;
-        float: left;
-        &__img1, &__img2, &__img3 {
-          // max-width: 1160px;
-          margin-top: -205px;
-          margin-left: -75px;
+        &__img1 {
+          position: absolute;
+          top: -205px;
+          left: -75px;
+          opacity: 0;
+        }
+        &__img2{
+          position: absolute;
+          top: -305px;
+          left: -175px;
+          opacity: 0;
+        }
+        &__img3{
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
         }
       }
     }
