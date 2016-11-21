@@ -138,29 +138,6 @@ header{
     overflow: hidden;
     margin-top: 30px;
     float: left;
-    &__arrow-left{
-      width: 60px;
-      height: 82px;
-      background: url(../img/arrows.png) 0px 0px no-repeat;
-      position: absolute;
-      top: 180px;
-      &:hover{
-        cursor: pointer;
-        background: url(../img/arrows.png) 0px -86px no-repeat;
-      }
-    }
-    &__arrow-right{
-      width: 60px;
-      height: 82px;
-      background: url(../img/arrows.png) -60px 0px no-repeat;
-      position: absolute;
-      top: 180px;
-      left: 1100px;
-      &:hover{
-        cursor: pointer;
-        background: url(../img/arrows.png) -60px -86px no-repeat;
-      }
-    }
     &__list{
       list-style: none;
       width: 10000px;
@@ -170,7 +147,7 @@ header{
         display: block;
         margin-right: 25px;
         float: left;
-        &__img{
+        &__img1, &__img2, &__img3 {
           // max-width: 1160px;
           margin-top: -205px;
           margin-left: -75px;
@@ -195,6 +172,27 @@ header{
         background: rgba(0, 0, 0, .7);
         width: 285px;
         padding: 0px 25px 15px;
+      }
+    }
+    &__nav{
+      position: absolute;
+      top: 425px;
+      left: 520px;
+      &__outside{
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        margin: 0 auto;
+        margin-left: 15px;
+        line-height: 20px;
+        display: inline-block;
+        &__inside{
+          display: none;
+          width: 12px;
+          height: 12px;
+          background: #000;
+          margin: 4px 4px;
+        }
       }
     }
   }
@@ -272,12 +270,15 @@ header{
           display: block;
           &__picture{
             position: relative;
-            &__1,&__2,&__3,&__4{
-              z-index: 5;
-              position: absolute;;
-              &:hover{
-                z-index: 1;
-                position: absolute;;
+            &__fon{
+              display: none;
+              position: absolute;
+              top: -15px;
+              opacity: 0.9;
+              &__plus{
+                position: absolute;
+                top: 115px;
+                left: 112px;
               }
             }
             &__1{
@@ -292,13 +293,6 @@ header{
             }
             &__4{
               margin-left: -60px;
-            }
-            &__blue{
-              z-index: 3;
-              margin-top: -15px;
-              margin-left: -5px;
-              position: absolute;;
-
             }
           }
         }
