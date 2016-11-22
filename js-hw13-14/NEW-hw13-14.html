@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS 13-14</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="js/shablonizator.js"></script>
+    <script src="js/NEW-js.js"></script>
+  </head>
+  <body>
+    <article id="content"></article>
+
+    <script type="text/html" id='wrapper'>
+      <h2>Тест по программированию</h2>
+        <% for (var i=0; i<3; i++) { %>
+          <div id="block<%=[i+1]%>">
+            <h3 class="question"> №<%=i+1%> <%=q0.title%> </h3>
+            <% for (var j=0; j<q0.answers.length; j++) {%>
+              <label class="inputBlock">
+                <input type= checkbox class="check"> <%=q0.answers[j] %>
+              </label>
+            <% }; %>
+          </div>
+        <% }; %>
+        <button id= "result">Проверить результаты</button>
+    </script>
+
+  </body>
+</html>
