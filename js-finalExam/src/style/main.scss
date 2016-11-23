@@ -30,17 +30,17 @@
   width: 100%;
   &__content{
     margin: $center;
-    &__menu{
+    .header__menu{
       color: #fff;
-      &__logo{
+      .header__logo{
         font-family: $MonBold;
         font-weight: bold;
         letter-spacing: 0.8px;
       }
-      &__list{
+      .header__list{
         display: flex;
         justify-content: flex-end;
-        &__item{
+        .header__list__item{
           font-family: $MonBold;
           font-weight: bold;
           box-sizing: border-box;
@@ -54,11 +54,10 @@
           &:hover{
             border: 2px solid #fff;
           }
-
         }
       }
     }
-    &__textBox{
+    .textBox{
       margin: $center;
       text-align: center;
       &__title{
@@ -86,14 +85,14 @@
 } //end header
 
 .howItWorks{
-  &__content{
-    &__title{
+  .content{
+    .title{
       font-family: $MonBold;
       text-align: center;
       letter-spacing: 0.6px;
     }
-    &__steps{
-      &__step1, &__step2, &__step3 {
+    .steps{
+      .step-1, .step-2, .step-3 {
         background: url('../img/howItWorks_img1.png');
         background-position: center center;
         background-size: cover;
@@ -111,21 +110,21 @@
           opacity: 0.5;
           z-index: 2;
         }
-        &__content{
+        .step__content{
           position: absolute;
           z-index: 3;
-          &__arrows{
+          .step__arrows{
             display: flex;
             justify-content: space-between;
-            &__left{@include sprite($arrow-l);}
-            &__right{@include sprite($arrow-r);}
+            .step__arrows__left{@include sprite($arrow-l);}
+            .step__arrows__right{@include sprite($arrow-r);}
           }
-          &__info{
+          .step__info{
             display: flex;
             align-items: flex-start;
             justify-content: flex-end;
             flex-direction: column;
-            &__button{
+            .step__info__button{
               display: block;
               font-family: 'Montserrat-Regular', sans-serif;
               background: #ff4e50;
@@ -134,12 +133,12 @@
               text-align: center;
               letter-spacing: 0.7px;
             }
-            &__title{
+            .step__info__title{
               font-family: $MonBold;
               color: #fff;
               letter-spacing: 1.1px;
             }
-            &__text{
+            .step__info__text{
               font-family: 'Roboto-Light', sans-serif;
               color: #ccc;
               letter-spacing: -0.2px;
@@ -152,12 +151,12 @@
           }
         }
       } //end step1, step2, step3
-      &__step2{
+      .step-2{
         background: url('../img/howItWorks_img2.png');
         background-position: center center;
         background-size: cover;
       }
-      &__step3{
+      .step-3{
         background: url('../img/howItWorks_img3.png');
         background-position: center center;
         background-size: cover;

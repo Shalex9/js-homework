@@ -6,17 +6,17 @@
   height: 700px;
   &__content{
     width: 940px;
-    &__menu{
+    .header__menu{
       padding-top: 38px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      &__logo{
+      .header__logo{
         font-size: 20px;
         padding-top: 5px;
       }
-      &__list{
-        &__item{
+      .header__list{
+        .header__list__item{
           font-size: 14px;
           margin-right: 1px;
           &:first-child{
@@ -25,7 +25,7 @@
         }
       }
     }
-    &__textBox{
+    .textBox{
       width: 505px;
       margin-top: 143px;
       &__title{
@@ -49,37 +49,37 @@
 } //end header
 
 .howItWorks{
-  &__content{
+  .content{
     width: 940px;
     margin: $center;
-    &__title{
+    .title{
       font-size: 22px;
       margin-top: 95px;
     }
-    &__steps{
+    .steps{
       display: flex;
       justify-content: space-between;
       margin-top: 34px;
-      &__step1, &__step2, &__step3 {
+      .step-1, .step-2, .step-3 {
         width: 300px;
         height: 400px;
-        &__content{
+        .step__content{
           padding: 19px;
           padding-top: 153px;
-          &__info{
+          .step__info{
             height: 175px;
-            &__button{
+            .step__info__button{
               font-size: 10px;
               width: 70px;
               height: 20px;
               line-height: 20px;
               border-radius: 10px;
             }
-            &__title{
+            .step__info__title{
               font-size: 24px;
               padding-top: 17px;
             }
-            &__text{
+            .step__info__text{
               font-size: 14px;
               padding-top: 14px;
             }

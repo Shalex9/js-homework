@@ -71,20 +71,20 @@ The `sprites` mixin generates identical output to the CSS template
   width: 100%; }
   .header__content {
     margin: 0 auto; }
-    .header__content__menu {
+    .header__content .header__menu {
       color: #fff; }
-      .header__content__menu__logo {
+      .header__content .header__menu .header__logo {
         font-family: "Montserrat-Bold", sans-serif;
         font-weight: bold;
         letter-spacing: 0.8px; }
-      .header__content__menu__list {
+      .header__content .header__menu .header__list {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: end;
             -ms-flex-pack: end;
                 justify-content: flex-end; }
-        .header__content__menu__list__item {
+        .header__content .header__menu .header__list .header__list__item {
           font-family: "Montserrat-Bold", sans-serif;
           font-weight: bold;
           box-sizing: border-box;
@@ -95,18 +95,18 @@ The `sprites` mixin generates identical output to the CSS template
           border-radius: 20px;
           line-height: 36px;
           text-align: center; }
-          .header__content__menu__list__item:hover {
+          .header__content .header__menu .header__list .header__list__item:hover {
             border: 2px solid #fff; }
-    .header__content__textBox {
+    .header__content .textBox {
       margin: 0 auto;
       text-align: center; }
-      .header__content__textBox__title {
+      .header__content .textBox__title {
         font-family: "Montserrat-Bold", sans-serif;
         color: #fff; }
-      .header__content__textBox__text {
+      .header__content .textBox__text {
         font-family: 'Roboto-Light', sans-serif;
         color: #fff; }
-      .header__content__textBox__button {
+      .header__content .textBox__button {
         display: block;
         font-family: "Montserrat-Bold", sans-serif;
         font-weight: bold;
@@ -118,19 +118,19 @@ The `sprites` mixin generates identical output to the CSS template
         background: #ff4e50;
         margin: 0 auto; }
 
-.howItWorks__content__title {
+.howItWorks .content .title {
   font-family: "Montserrat-Bold", sans-serif;
   text-align: center;
   letter-spacing: 0.6px; }
 
-.howItWorks__content__steps__step1, .howItWorks__content__steps__step2, .howItWorks__content__steps__step3 {
+.howItWorks .content .steps .step-1, .howItWorks .content .steps .step-2, .howItWorks .content .steps .step-3 {
   background: url("../img/howItWorks_img1.png");
   background-position: center center;
   background-size: cover;
   overflow: hidden;
   position: relative;
   z-index: 1; }
-  .howItWorks__content__steps__step1::after, .howItWorks__content__steps__step2::after, .howItWorks__content__steps__step3::after {
+  .howItWorks .content .steps .step-1::after, .howItWorks .content .steps .step-2::after, .howItWorks .content .steps .step-3::after {
     content: ' ';
     display: block;
     position: absolute;
@@ -141,27 +141,27 @@ The `sprites` mixin generates identical output to the CSS template
     top: 0;
     opacity: 0.5;
     z-index: 2; }
-  .howItWorks__content__steps__step1__content, .howItWorks__content__steps__step2__content, .howItWorks__content__steps__step3__content {
+  .howItWorks .content .steps .step-1 .step__content, .howItWorks .content .steps .step-2 .step__content, .howItWorks .content .steps .step-3 .step__content {
     position: absolute;
     z-index: 3; }
-    .howItWorks__content__steps__step1__content__arrows, .howItWorks__content__steps__step2__content__arrows, .howItWorks__content__steps__step3__content__arrows {
+    .howItWorks .content .steps .step-1 .step__content .step__arrows, .howItWorks .content .steps .step-2 .step__content .step__arrows, .howItWorks .content .steps .step-3 .step__content .step__arrows {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      .howItWorks__content__steps__step1__content__arrows__left, .howItWorks__content__steps__step2__content__arrows__left, .howItWorks__content__steps__step3__content__arrows__left {
+      .howItWorks .content .steps .step-1 .step__content .step__arrows .step__arrows__left, .howItWorks .content .steps .step-2 .step__content .step__arrows .step__arrows__left, .howItWorks .content .steps .step-3 .step__content .step__arrows .step__arrows__left {
         background-image: url(../img/sprite.png);
         background-position: 0px -128px;
         width: 30px;
         height: 55px; }
-      .howItWorks__content__steps__step1__content__arrows__right, .howItWorks__content__steps__step2__content__arrows__right, .howItWorks__content__steps__step3__content__arrows__right {
+      .howItWorks .content .steps .step-1 .step__content .step__arrows .step__arrows__right, .howItWorks .content .steps .step-2 .step__content .step__arrows .step__arrows__right, .howItWorks .content .steps .step-3 .step__content .step__arrows .step__arrows__right {
         background-image: url(../img/sprite.png);
         background-position: 0px -183px;
         width: 30px;
         height: 55px; }
-    .howItWorks__content__steps__step1__content__info, .howItWorks__content__steps__step2__content__info, .howItWorks__content__steps__step3__content__info {
+    .howItWorks .content .steps .step-1 .step__content .step__info, .howItWorks .content .steps .step-2 .step__content .step__info, .howItWorks .content .steps .step-3 .step__content .step__info {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -175,7 +175,7 @@ The `sprites` mixin generates identical output to the CSS template
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
-      .howItWorks__content__steps__step1__content__info__button, .howItWorks__content__steps__step2__content__info__button, .howItWorks__content__steps__step3__content__info__button {
+      .howItWorks .content .steps .step-1 .step__content .step__info .step__info__button, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__button, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__button {
         display: block;
         font-family: 'Montserrat-Regular', sans-serif;
         background: #ff4e50;
@@ -183,23 +183,23 @@ The `sprites` mixin generates identical output to the CSS template
         color: #fff;
         text-align: center;
         letter-spacing: 0.7px; }
-      .howItWorks__content__steps__step1__content__info__title, .howItWorks__content__steps__step2__content__info__title, .howItWorks__content__steps__step3__content__info__title {
+      .howItWorks .content .steps .step-1 .step__content .step__info .step__info__title, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__title, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__title {
         font-family: "Montserrat-Bold", sans-serif;
         color: #fff;
         letter-spacing: 1.1px; }
-      .howItWorks__content__steps__step1__content__info__text, .howItWorks__content__steps__step2__content__info__text, .howItWorks__content__steps__step3__content__info__text {
+      .howItWorks .content .steps .step-1 .step__content .step__info .step__info__text, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__text, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__text {
         font-family: 'Roboto-Light', sans-serif;
         color: #ccc;
         letter-spacing: -0.2px; }
-  .howItWorks__content__steps__step1__img__1, .howItWorks__content__steps__step2__img__1, .howItWorks__content__steps__step3__img__1 {
+  .howItWorks .content .steps .step-1__img__1, .howItWorks .content .steps .step-2__img__1, .howItWorks .content .steps .step-3__img__1 {
     list-style: none; }
 
-.howItWorks__content__steps__step2 {
+.howItWorks .content .steps .step-2 {
   background: url("../img/howItWorks_img2.png");
   background-position: center center;
   background-size: cover; }
 
-.howItWorks__content__steps__step3 {
+.howItWorks .content .steps .step-3 {
   background: url("../img/howItWorks_img3.png");
   background-position: center center;
   background-size: cover; }

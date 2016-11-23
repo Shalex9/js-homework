@@ -47,7 +47,7 @@ The `sprites` mixin generates identical output to the CSS template
   height: 700px; }
   .header__content {
     width: 940px; }
-    .header__content__menu {
+    .header__content .header__menu {
       padding-top: 38px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -58,37 +58,37 @@ The `sprites` mixin generates identical output to the CSS template
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      .header__content__menu__logo {
+      .header__content .header__menu .header__logo {
         font-size: 20px;
         padding-top: 5px; }
-      .header__content__menu__list__item {
+      .header__content .header__menu .header__list .header__list__item {
         font-size: 14px;
         margin-right: 1px; }
-        .header__content__menu__list__item:first-child {
+        .header__content .header__menu .header__list .header__list__item:first-child {
           margin-right: -3px; }
-    .header__content__textBox {
+    .header__content .textBox {
       width: 505px;
       margin-top: 143px; }
-      .header__content__textBox__title {
+      .header__content .textBox__title {
         font-size: 50px;
         line-height: 61px; }
-      .header__content__textBox__text {
+      .header__content .textBox__text {
         font-size: 24px;
         margin-top: 25px; }
-      .header__content__textBox__button {
+      .header__content .textBox__button {
         font-size: 14px;
         width: 220px;
         height: 40px;
         line-height: 40px;
         margin-top: 34px; }
 
-.howItWorks__content {
+.howItWorks .content {
   width: 940px;
   margin: 0 auto; }
-  .howItWorks__content__title {
+  .howItWorks .content .title {
     font-size: 22px;
     margin-top: 95px; }
-  .howItWorks__content__steps {
+  .howItWorks .content .steps {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -96,23 +96,23 @@ The `sprites` mixin generates identical output to the CSS template
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 34px; }
-    .howItWorks__content__steps__step1, .howItWorks__content__steps__step2, .howItWorks__content__steps__step3 {
+    .howItWorks .content .steps .step-1, .howItWorks .content .steps .step-2, .howItWorks .content .steps .step-3 {
       width: 300px;
       height: 400px; }
-      .howItWorks__content__steps__step1__content, .howItWorks__content__steps__step2__content, .howItWorks__content__steps__step3__content {
+      .howItWorks .content .steps .step-1 .step__content, .howItWorks .content .steps .step-2 .step__content, .howItWorks .content .steps .step-3 .step__content {
         padding: 19px;
         padding-top: 153px; }
-        .howItWorks__content__steps__step1__content__info, .howItWorks__content__steps__step2__content__info, .howItWorks__content__steps__step3__content__info {
+        .howItWorks .content .steps .step-1 .step__content .step__info, .howItWorks .content .steps .step-2 .step__content .step__info, .howItWorks .content .steps .step-3 .step__content .step__info {
           height: 175px; }
-          .howItWorks__content__steps__step1__content__info__button, .howItWorks__content__steps__step2__content__info__button, .howItWorks__content__steps__step3__content__info__button {
+          .howItWorks .content .steps .step-1 .step__content .step__info .step__info__button, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__button, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__button {
             font-size: 10px;
             width: 70px;
             height: 20px;
             line-height: 20px;
             border-radius: 10px; }
-          .howItWorks__content__steps__step1__content__info__title, .howItWorks__content__steps__step2__content__info__title, .howItWorks__content__steps__step3__content__info__title {
+          .howItWorks .content .steps .step-1 .step__content .step__info .step__info__title, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__title, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__title {
             font-size: 24px;
             padding-top: 17px; }
-          .howItWorks__content__steps__step1__content__info__text, .howItWorks__content__steps__step2__content__info__text, .howItWorks__content__steps__step3__content__info__text {
+          .howItWorks .content .steps .step-1 .step__content .step__info .step__info__text, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__text, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__text {
             font-size: 14px;
             padding-top: 14px; }
