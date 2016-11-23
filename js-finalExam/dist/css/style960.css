@@ -139,6 +139,12 @@ The `sprites` mixin generates identical output to the CSS template
     font-size: 14px;
     margin: 3px auto; }
 
+.masonry {
+  width: 940px; }
+  .masonry h1 {
+    padding-top: 94px;
+    margin-left: -5px; }
+
 .search {
   width: 413px;
   height: 160px;

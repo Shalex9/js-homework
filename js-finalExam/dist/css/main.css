@@ -76,7 +76,9 @@ The `sprites` mixin generates identical output to the CSS template
       .header__content .header__menu .logo {
         font-family: "Montserrat-Bold", sans-serif;
         font-weight: bold;
-        letter-spacing: 0.8px; }
+        letter-spacing: 0.8px;
+        text-decoration: none;
+        color: #fff; }
       .header__content .header__menu .header__list {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -277,7 +279,35 @@ The `sprites` mixin generates identical output to the CSS template
 
 .masonry {
   height: 1140px;
-  background: #eee; }
+  background: #eee;
+  margin: 0 auto; }
+  .masonry h1 {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #333333;
+    text-align: center;
+    letter-spacing: 0.6px; }
+  .masonry .grid {
+    margin-top: 34px;
+    background: #DDD;
+    max-width: 940px; }
+    .masonry .grid:after {
+      content: '';
+      display: block;
+      clear: both; }
+    .masonry .grid .grid-item {
+      float: left;
+      width: 32%;
+      height: 312px;
+      border-radius: 4px;
+      background: #fff;
+      border: 2px solid #333;
+      border-color: rgba(0, 0, 0, 0.7); }
+    .masonry .grid .gutter-sizer {
+      width: 2%; }
+    .masonry .grid .grid-item--width2 {
+      width: 66%; }
 
 .search {
   margin: 0 auto; }
@@ -322,11 +352,13 @@ footer {
     font-family: "Montserrat-Bold", sans-serif;
     font-weight: bold;
     letter-spacing: 0.8px;
-    color: #ff4e50; }
+    color: #ff4e50;
+    text-decoration: none; }
   footer .company, footer .partners {
     float: left;
     width: 140px;
-    letter-spacing: 0.5px; }
+    letter-spacing: 0.5px;
+    margin-bottom: 35px; }
     footer .company__title, footer .partners__title {
       font-family: "Montserrat-Bold", sans-serif;
       font-weight: bold;
@@ -340,6 +372,8 @@ footer {
       font-family: 'Roboto-Light', sans-serif;
       font-weight: normal;
       font-size: 14px; }
+      footer .company__link:hover, footer .partners__link:hover {
+        color: #bbb; }
   footer .designer {
     float: right; }
     footer .designer__text {

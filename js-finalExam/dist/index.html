@@ -9,13 +9,16 @@
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/style320.css">
     <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 959px)" href="css/style768.css">
     <link rel="stylesheet" media="screen and (min-width: 960px)" href="css/style960.css">
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="js/packery-mode.pkgd.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
   <header class="header">
     <div class="header__content">
       <div class="header__menu">
-        <p class="logo">URLAUBSGLÜCK</p>
+        <a class="logo" href="#">URLAUBSGLÜCK</a>
         <div class="header__list">
           <a class="header__list__item" href="#">Log in</a>
           <a class="header__list__item" href="#">Sing up</a>
@@ -104,7 +107,17 @@
   </section>
 
   <section class="masonry">
-
+    <h1>Discover holiday activity ideas</h1>
+    <div class="grid">
+      <div class="grid-item">1</div>
+      <!-- <div class="gutter-sizer"></div> -->
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item grid-item--width2 ">5</div>
+      <div class="grid-item grid-item--width2">6</div>
+      <div class="grid-item">7</div>
+    </div>
   </section>
 
   <section class="search">
@@ -119,7 +132,7 @@
   <hr class="redline">
 
   <footer>
-    <p class="logo--footer">URLAUBSGLÜCK</p>
+    <a class="logo--footer" href="#">URLAUBSGLÜCK</a>
     <div class="company">
       <p class="company__title">Company</p>
       <a class="company__link" href="#">About</a>
@@ -135,6 +148,19 @@
       <img class="designer__icon" src="img/designerIcon.png" alt="">
     </div>
   </footer>
+
+<!-- Масонри скрипт - почему-то работает только здесь, в остовном хтмл не работает -->
+  <script type="text/javascript">
+      $('.grid').isotope({
+        layoutMode: 'packery',
+        itemSelector: '.grid-item',
+        // percentPosition: true,
+        packery: {
+          // gutter: '.gutter-sizer'
+          gutter: 18
+        }
+      });
+  </script>
 
 </body>
 </html>

@@ -36,6 +36,8 @@
         font-family: $MonBold;
         font-weight: bold;
         letter-spacing: 0.8px;
+        text-decoration: none;
+        color: #fff;
       }
       .header__list{
         display: flex;
@@ -242,6 +244,36 @@
 .masonry{
   height: 1140px;
   background: #eee;
+  margin: $center;
+  h1{
+    font-family: $MonBold;
+    font-weight: bold;
+    font-size: 22px;
+    color: #333333;
+    text-align: center;
+    letter-spacing: 0.6px;
+  }
+  .grid {
+    margin-top: 34px;
+    background: #DDD;
+    max-width: 940px;
+    &:after {
+    content: '';
+    display: block;
+    clear: both;
+    }
+    .grid-item {
+    float: left;
+    width: 32%;
+    height: 312px;
+    border-radius: 4px;
+    background: #fff;
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.7);
+    }
+    .gutter-sizer { width: 2%; }
+    .grid-item--width2 { width: 66% }
+  }
 }
 
 .search{
@@ -296,11 +328,13 @@ footer{
     font-weight: bold;
     letter-spacing: 0.8px;
     color: #ff4e50;
+    text-decoration: none;
   }
   .company, .partners{
     float: left;
     width: 140px;
     letter-spacing: 0.5px;
+    margin-bottom: 35px;
     &__title{
       font-family: $MonBold;
       font-weight: bold;
@@ -315,6 +349,7 @@ footer{
       font-family: 'Roboto-Light', sans-serif;;
       font-weight: normal;
       font-size: 14px;
+      &:hover{color: #bbb;}
     }
   }
   .designer{

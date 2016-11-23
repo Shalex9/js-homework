@@ -117,7 +117,13 @@
   }
 }
 
-.masonry{}
+.masonry{
+  width: 940px;
+  h1{
+    padding-top: 94px;
+    margin-left: -5px;
+  }
+}
 
 .search{
   width: 413px;

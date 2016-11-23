@@ -28,6 +28,8 @@
     "gulp-watch": "^4.3.11",
     "gulp.spritesmith": "^6.2.1",
     "imagemin-pngquant": "^5.0.0",
+    "isotope-layout": "^3.0.1",
+    "isotope-packery": "^2.0.0",
     "masonry-layout": "^4.1.1"
   }
 }
