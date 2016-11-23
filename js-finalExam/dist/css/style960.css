@@ -58,7 +58,7 @@ The `sprites` mixin generates identical output to the CSS template
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      .header__content .header__menu .header__logo {
+      .header__content .header__menu .logo {
         font-size: 20px;
         padding-top: 5px; }
       .header__content .header__menu .header__list .header__list__item {
@@ -116,3 +116,63 @@ The `sprites` mixin generates identical output to the CSS template
           .howItWorks .content .steps .step-1 .step__content .step__info .step__info__text, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__text, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__text {
             font-size: 14px;
             padding-top: 14px; }
+
+.partners {
+  width: 940px; }
+  .partners h1 {
+    font-size: 22px;
+    margin-top: 96px;
+    letter-spacing: 0.8px; }
+  .partners .blockPartners {
+    height: 270px;
+    margin-top: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .partners .blockPartners .box-1:not(:first-child), .partners .blockPartners .box-2:not(:first-child), .partners .blockPartners .box-3:not(:first-child), .partners .blockPartners .box-4:not(:first-child) {
+      margin-left: 20px; }
+    .partners .blockPartners .box-1 .box__name, .partners .blockPartners .box-2 .box__name, .partners .blockPartners .box-3 .box__name, .partners .blockPartners .box-4 .box__name {
+      font-size: 14px; }
+    .partners .blockPartners .box-1 .box__comment, .partners .blockPartners .box-2 .box__comment, .partners .blockPartners .box-3 .box__comment, .partners .blockPartners .box-4 .box__comment {
+      font-size: 14px; }
+  .partners button {
+    font-size: 14px;
+    margin: 3px auto; }
+
+.search {
+  width: 413px;
+  height: 160px;
+  margin-top: 80px; }
+  .search h1 {
+    font-size: 22px;
+    margin-left: -4px; }
+  .search h4 {
+    font-size: 18px;
+    margin-top: 33px;
+    letter-spacing: -0.2px;
+    margin-left: -4px; }
+  .search .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 37px; }
+
+.redline {
+  margin-top: 97px; }
+
+footer {
+  padding-top: 36px;
+  width: 940px; }
+  footer .logo--footer {
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    width: 220px; }
+  footer .company, footer .partners {
+    margin-left: 19px; }
+    footer .company__title, footer .partners__title {
+      font-size: 14px; }
+  footer .designer {
+    width: 110px; }

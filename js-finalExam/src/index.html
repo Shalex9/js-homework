@@ -9,12 +9,13 @@
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/style320.css">
     <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 959px)" href="css/style768.css">
     <link rel="stylesheet" media="screen and (min-width: 960px)" href="css/style960.css">
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 </head>
 <body>
   <header class="header">
     <div class="header__content">
       <div class="header__menu">
-        <p class="header__logo">URLAUBSGLÜCK</p>
+        <p class="logo">URLAUBSGLÜCK</p>
         <div class="header__list">
           <a class="header__list__item" href="#">Log in</a>
           <a class="header__list__item" href="#">Sing up</a>
@@ -28,7 +29,7 @@
     </div>
   </header>
 
-  <article class="howItWorks">
+  <section class="howItWorks">
     <div class="content">
       <h1 class="title">How Urlaubsglück works?</h1>
       <div class="steps">
@@ -73,6 +74,67 @@
         </div>
       </div>
     </div>
-  </article>
+   </section> <!-- END howItWorks -->
+
+  <section class="partners">
+     <h1>Meet a partner for your best holiday</h1>
+     <div class="blockPartners">
+       <div class="box-1">
+         <div class="box__img"><div class="box__img__icon"></div></div>
+         <h3 class="box__name">Bradley Hunter</h3>
+         <p class="box__comment">Based in Chicago. I love playing tennis and loud music.</p>
+       </div>
+       <div class="box-2">
+         <div class="box__img"><div class="box__img__icon"></div></div>
+         <h3 class="box__name">Heather Walker</h3>
+         <p class="box__comment">I'm a happy person that loves cats and climbing on mountains.</p>
+       </div>
+       <div class="box-3">
+         <div class="box__img"><div class="box__img__icon"></div></div>
+         <h3 class="box__name">Lucas Marsha</h3>
+         <p class="box__comment">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+       </div>
+       <div class="box-4">
+         <div class="box__img"><div class="box__img__icon"></div></div>
+         <h3 class="box__name">Bradley Hunter</h3>
+         <p class="box__comment">Based in Chicago. I love playing tennis and loud music.</p>
+       </div>
+     </div>
+     <button type="button" name="button">See other parthers</button>
+  </section>
+
+  <section class="masonry">
+
+  </section>
+
+  <section class="search">
+    <h1>Discover holiday activity ideas</h1>
+    <h4>Hi! What are your holiday interests?</h4>
+    <form class="form">
+      <input class="form__input" type="text" name="" value="" placeholder="Enter your interests">
+      <button class="form__button" type="button" name="button">Search parthers</button>
+    </form>
+  </section>
+
+  <hr class="redline">
+
+  <footer>
+    <p class="logo--footer">URLAUBSGLÜCK</p>
+    <div class="company">
+      <p class="company__title">Company</p>
+      <a class="company__link" href="#">About</a>
+      <a class="company__link" href="#">Contacts</a>
+      <a class="company__link" href="#">Press</a>
+      <a class="company__link" href="#">Blog</a>
+    </div>
+    <div class="partners">
+      <p class="partners__title">Partners</p>
+    </div>
+    <div class="designer">
+      <p class="designer__text">DESIGNED BY</p>
+      <img class="designer__icon" src="img/designerIcon.png" alt="">
+    </div>
+  </footer>
+
 </body>
 </html>

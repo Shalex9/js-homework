@@ -32,7 +32,7 @@
     margin: $center;
     .header__menu{
       color: #fff;
-      .header__logo{
+      .logo{
         font-family: $MonBold;
         font-weight: bold;
         letter-spacing: 0.8px;
@@ -145,12 +145,7 @@
             }
           }
         }
-        &__img{
-          &__1{
-            list-style: none;
-          }
-        }
-      } //end step1, step2, step3
+      } // end .step-1, .step-2, .step-3
       .step-2{
         background: url('../img/howItWorks_img2.png');
         background-position: center center;
@@ -164,3 +159,174 @@
     } //end steps
   } //end content
 } // end howItWorks
+
+.partners{
+  margin: $center;
+  h1{
+    font-family: $MonBold;
+    font-weight: bold;
+    text-align: center;
+  }
+  .blockPartners{
+    .box-1, .box-2, .box-3, .box-4{
+      width: 220px;
+      height: 225px;
+      .box__img{
+        position: relative;
+        margin: $center;
+        width: 122px;
+        height: 122px;
+        border-radius: 61px;
+        .box__img__icon{
+          position: absolute;
+          top: 86px;
+          left: 85px;
+        }
+      }
+      .box__name{
+        font-family: $MonBold;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 18px;
+        letter-spacing: 0.3px;
+      }
+      .box__comment{
+        font-family: 'Roboto-Light', sans-serif;;
+        font-weight: normal;
+        color: #666;
+        margin-top: 14px;
+        text-align: center;
+        letter-spacing: -0.3px;
+      }
+    }
+    .box-1{
+      .box__img{
+        background: url('../img/partner1.png');
+        .box__img__icon{@include sprite($p-icon1);}
+      }
+    }
+    .box-2{
+      .box__img{
+        background: url('../img/partner2.png');
+        .box__img__icon{@include sprite($p-icon2);}
+      }
+    }
+    .box-3{
+      .box__img{
+        background: url('../img/partner3.png') -3px 0px;
+        .box__img__icon{@include sprite($p-icon3);}
+      }
+    }
+    .box-4{
+      .box__img{
+        background: url('../img/partner4.png') -2px 0px;
+        .box__img__icon{@include sprite($p-icon4);}
+      }
+    }
+  }
+  button{
+    width: 192px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    font-family: $MonBold;
+    font-weight: bold;
+    color: #ff4e50;
+    letter-spacing: 0.4px;
+  }
+}
+
+.masonry{
+  height: 1140px;
+  background: #eee;
+}
+
+.search{
+  margin: $center;
+  h1{
+    font-family: $MonBold;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.6px;
+  }
+  h4{
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 200;
+    text-align: center;
+  }
+  .form{
+    &__input{
+      width: 240px;
+      height: 40px;
+      padding: 10px 14px;
+      letter-spacing: 0.3px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      color: #ccc;
+    }
+    &__button{
+      margin-right: 3px;
+      width: 160px;
+      border: none;
+      border-radius: 20px;
+      background: #ff4e50;
+      color: #fff;
+      font-family: $MonBold;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      cursor: pointer;
+    }
+  }
+}
+
+.redline{
+  height: 5px;
+  background: #ff4e50;
+}
+
+footer{
+  margin: $center;
+  .logo--footer{
+    float: left;
+    font-family: $MonBold;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    color: #ff4e50;
+  }
+  .company, .partners{
+    float: left;
+    width: 140px;
+    letter-spacing: 0.5px;
+    &__title{
+      font-family: $MonBold;
+      font-weight: bold;
+      margin-bottom: 14px;
+    }
+    &__link{
+      display: block;
+      margin-top: 8px;
+      letter-spacing: -0.2px;
+      text-decoration: none;
+      color: #666;
+      font-family: 'Roboto-Light', sans-serif;;
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+  .designer{
+    float: right;
+    &__text{
+      font-family: $MonBold;
+      font-weight: bold;
+      font-size: 10px;
+      color: #ccc;
+      float: right;
+      letter-spacing: 0.9px;
+    }
+    &__icon{margin-top: 9px;}
+  }
+}

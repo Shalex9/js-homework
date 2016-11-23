@@ -73,7 +73,7 @@ The `sprites` mixin generates identical output to the CSS template
     margin: 0 auto; }
     .header__content .header__menu {
       color: #fff; }
-      .header__content .header__menu .header__logo {
+      .header__content .header__menu .logo {
         font-family: "Montserrat-Bold", sans-serif;
         font-weight: bold;
         letter-spacing: 0.8px; }
@@ -153,12 +153,12 @@ The `sprites` mixin generates identical output to the CSS template
               justify-content: space-between; }
       .howItWorks .content .steps .step-1 .step__content .step__arrows .step__arrows__left, .howItWorks .content .steps .step-2 .step__content .step__arrows .step__arrows__left, .howItWorks .content .steps .step-3 .step__content .step__arrows .step__arrows__left {
         background-image: url(../img/sprite.png);
-        background-position: 0px -128px;
+        background-position: 0px -160px;
         width: 30px;
         height: 55px; }
       .howItWorks .content .steps .step-1 .step__content .step__arrows .step__arrows__right, .howItWorks .content .steps .step-2 .step__content .step__arrows .step__arrows__right, .howItWorks .content .steps .step-3 .step__content .step__arrows .step__arrows__right {
         background-image: url(../img/sprite.png);
-        background-position: 0px -183px;
+        background-position: 0px -215px;
         width: 30px;
         height: 55px; }
     .howItWorks .content .steps .step-1 .step__content .step__info, .howItWorks .content .steps .step-2 .step__content .step__info, .howItWorks .content .steps .step-3 .step__content .step__info {
@@ -191,8 +191,6 @@ The `sprites` mixin generates identical output to the CSS template
         font-family: 'Roboto-Light', sans-serif;
         color: #ccc;
         letter-spacing: -0.2px; }
-  .howItWorks .content .steps .step-1__img__1, .howItWorks .content .steps .step-2__img__1, .howItWorks .content .steps .step-3__img__1 {
-    list-style: none; }
 
 .howItWorks .content .steps .step-2 {
   background: url("../img/howItWorks_img2.png");
@@ -203,3 +201,153 @@ The `sprites` mixin generates identical output to the CSS template
   background: url("../img/howItWorks_img3.png");
   background-position: center center;
   background-size: cover; }
+
+.partners {
+  margin: 0 auto; }
+  .partners h1 {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: bold;
+    text-align: center; }
+  .partners .blockPartners .box-1, .partners .blockPartners .box-2, .partners .blockPartners .box-3, .partners .blockPartners .box-4 {
+    width: 220px;
+    height: 225px; }
+    .partners .blockPartners .box-1 .box__img, .partners .blockPartners .box-2 .box__img, .partners .blockPartners .box-3 .box__img, .partners .blockPartners .box-4 .box__img {
+      position: relative;
+      margin: 0 auto;
+      width: 122px;
+      height: 122px;
+      border-radius: 61px; }
+      .partners .blockPartners .box-1 .box__img .box__img__icon, .partners .blockPartners .box-2 .box__img .box__img__icon, .partners .blockPartners .box-3 .box__img .box__img__icon, .partners .blockPartners .box-4 .box__img .box__img__icon {
+        position: absolute;
+        top: 86px;
+        left: 85px; }
+    .partners .blockPartners .box-1 .box__name, .partners .blockPartners .box-2 .box__name, .partners .blockPartners .box-3 .box__name, .partners .blockPartners .box-4 .box__name {
+      font-family: "Montserrat-Bold", sans-serif;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 18px;
+      letter-spacing: 0.3px; }
+    .partners .blockPartners .box-1 .box__comment, .partners .blockPartners .box-2 .box__comment, .partners .blockPartners .box-3 .box__comment, .partners .blockPartners .box-4 .box__comment {
+      font-family: 'Roboto-Light', sans-serif;
+      font-weight: normal;
+      color: #666;
+      margin-top: 14px;
+      text-align: center;
+      letter-spacing: -0.3px; }
+  .partners .blockPartners .box-1 .box__img {
+    background: url("../img/partner1.png"); }
+    .partners .blockPartners .box-1 .box__img .box__img__icon {
+      background-image: url(../img/sprite.png);
+      background-position: 0px 0px;
+      width: 40px;
+      height: 40px; }
+  .partners .blockPartners .box-2 .box__img {
+    background: url("../img/partner2.png"); }
+    .partners .blockPartners .box-2 .box__img .box__img__icon {
+      background-image: url(../img/sprite.png);
+      background-position: 0px -40px;
+      width: 40px;
+      height: 40px; }
+  .partners .blockPartners .box-3 .box__img {
+    background: url("../img/partner3.png") -3px 0px; }
+    .partners .blockPartners .box-3 .box__img .box__img__icon {
+      background-image: url(../img/sprite.png);
+      background-position: 0px -80px;
+      width: 40px;
+      height: 40px; }
+  .partners .blockPartners .box-4 .box__img {
+    background: url("../img/partner4.png") -2px 0px; }
+    .partners .blockPartners .box-4 .box__img .box__img__icon {
+      background-image: url(../img/sprite.png);
+      background-position: 0px -120px;
+      width: 40px;
+      height: 40px; }
+  .partners button {
+    width: 192px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: bold;
+    color: #ff4e50;
+    letter-spacing: 0.4px; }
+
+.masonry {
+  height: 1140px;
+  background: #eee; }
+
+.search {
+  margin: 0 auto; }
+  .search h1 {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.6px; }
+  .search h4 {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 200;
+    text-align: center; }
+  .search .form__input {
+    width: 240px;
+    height: 40px;
+    padding: 10px 14px;
+    letter-spacing: 0.3px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #ccc; }
+  .search .form__button {
+    margin-right: 3px;
+    width: 160px;
+    border: none;
+    border-radius: 20px;
+    background: #ff4e50;
+    color: #fff;
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    cursor: pointer; }
+
+.redline {
+  height: 5px;
+  background: #ff4e50; }
+
+footer {
+  margin: 0 auto; }
+  footer .logo--footer {
+    float: left;
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    color: #ff4e50; }
+  footer .company, footer .partners {
+    float: left;
+    width: 140px;
+    letter-spacing: 0.5px; }
+    footer .company__title, footer .partners__title {
+      font-family: "Montserrat-Bold", sans-serif;
+      font-weight: bold;
+      margin-bottom: 14px; }
+    footer .company__link, footer .partners__link {
+      display: block;
+      margin-top: 8px;
+      letter-spacing: -0.2px;
+      text-decoration: none;
+      color: #666;
+      font-family: 'Roboto-Light', sans-serif;
+      font-weight: normal;
+      font-size: 14px; }
+  footer .designer {
+    float: right; }
+    footer .designer__text {
+      font-family: "Montserrat-Bold", sans-serif;
+      font-weight: bold;
+      font-size: 10px;
+      color: #ccc;
+      float: right;
+      letter-spacing: 0.9px; }
+    footer .designer__icon {
+      margin-top: 9px; }

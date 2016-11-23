@@ -11,7 +11,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .header__logo{
+      .logo{
         font-size: 20px;
         padding-top: 5px;
       }
@@ -89,3 +89,77 @@
     } //end steps
   } //end content
 } // end howItWorks
+
+.partners{
+  width: 940px;
+  h1{
+    font-size: 22px;
+    margin-top: 96px;
+    letter-spacing: 0.8px;
+  }
+  .blockPartners{
+    height: 270px;
+    margin-top: 31px;
+    display: flex;
+    .box-1, .box-2, .box-3, .box-4{
+      &:not(:first-child){margin-left: 20px;};
+      .box__name{
+        font-size: 14px;
+      }
+      .box__comment{
+        font-size: 14px;
+      }
+    }
+  }
+  button{
+    font-size: 14px;
+    margin: 3px auto;
+  }
+}
+
+.masonry{}
+
+.search{
+  width: 413px;
+  height: 160px;
+  margin-top: 80px;
+  h1{
+    font-size: 22px;
+    margin-left: -4px;
+  }
+  h4{
+    font-size: 18px;
+    margin-top: 33px;
+    letter-spacing: -0.2px;
+    margin-left: -4px;
+  }
+  .form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 37px;
+    &__input{}
+    &__button{}
+  }
+}
+
+.redline{margin-top: 97px;}
+
+footer{
+  padding-top: 36px;
+  width: 940px;
+  .logo--footer{
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    width: 220px;
+  }
+  .company, .partners{
+    margin-left: 19px;
+    &__title{font-size: 14px;}
+    &__link{}
+  }
+  .designer{
+    width: 110px;
+    &__text{}
+    &__icon{}
+  }
+}
