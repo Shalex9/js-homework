@@ -35,27 +35,32 @@ body{
   cursor: text;
   padding-left: 10px;
 }
-#search input::-webkit-input-placeholder {font-size: 18px;}
-             ::-moz-placeholder          {font-size: 18px;}/* Firefox 19+ */
-             :-moz-placeholder           {font-size: 18px;}/* Firefox 18- */
-             :-ms-input-placeholder      {font-size: 18px;}
-#searchButton{
+.searchButton{
   display: block;
   width: 300px;
   height: 30px;
   margin: 20px auto;
   cursor: pointer;
 }
-#boxForRezult{border:solid 1px #999; margin:5px; padding:10px}
-#boxForRezult img {border: 3px solid gray; margin: 10px; max-width: 200px; max-height: 200px;}
+.boxForRezult img {
+  border: 1px solid gray;
+  max-width: 200px;
+  max-height: 200px;
+}
+.boxForRezult ul{
+  display: flex;
+  padding-left: 10px;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+}
 h3,h5{margin: 0}
 .info{
-  max-width: 200px;
+  max-width: 500px;
   word-wrap: break-word;
   margin: 10px;
   text-align: center;
 }
 .text{color: red}
-/*.foto{
-  float: left;
-}*/
