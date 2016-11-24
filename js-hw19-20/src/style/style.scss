@@ -442,9 +442,9 @@ header{
             border-right: 1px solid #cfcfcf;
             padding-left: 10px;
             font-weight: bold;
-          }
-          .active-plus{
-            border-right: none;
+            &::before{
+              content: "+";
+            }
           }
           .accordion__title{
             font-size: 14px;
@@ -456,6 +456,12 @@ header{
         }
         .active{
           background: #f4b60d;
+          .active-plus{
+            border-right: none;
+            &::before{
+              content: "-";
+            }
+          }
         }
         .accordion__text{
           font-size: 13px;

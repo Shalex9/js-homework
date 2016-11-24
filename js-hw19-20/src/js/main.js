@@ -30,19 +30,17 @@ $(document).ready(function(){
 
   //   Accordion
     $(".accordion__title-box:first").addClass("active")
-        .find(".accordion__plus-minus").addClass("active-plus").text("-");
+        .find(".accordion__plus-minus").addClass("active-plus");
     $(".accordion__text:not(:first)").hide();
 
     $(".accordion__title-box").click(function(){
         $(this).next(".accordion__text").slideToggle("slow")
             .siblings(".accordion__text:visible").slideUp("slow");
-        var text = $(this).find(".accordion__plus-minus").text();
-        $(this).toggleClass("active")
-            .find(".accordion__plus-minus").toggleClass("active-plus").text(text == "+" ? "-" : "+")
-            .siblings("accordion__title-box").removeClass("active")
-            .find(".accordion__plus-minus").text(text == "+" ? "-" : "+");
-        // var sibl = $(this).siblings(".accordion__title-box").find(".accordion__plus-minus");
-        // (sibl.text()==="+" ? "-" : "+");
-     });
+        // var text = $(this).find(".accordion__plus-minus").text(); // меняем контент:  .text(text == "+" ? "-" : "+")
+
+        $(this).toggleClass("active");
+        $(this).siblings("accordion__title-box").removeClass("active");
+        $(this).find(".accordion__plus-minus").toggleClass("active-plus");
+    });
      //  END Accordion
 });
