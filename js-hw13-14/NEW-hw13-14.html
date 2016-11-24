@@ -18,7 +18,7 @@
             <h3 class="question"> №<%=i+1%> <%=questions[i].title%> </h3>
             <% for (var j=0; j<questions[i].answers.length; j++) {%>
               <label class="inputBlock">
-                <input type="checkbox" class="check" value="<%=j%>"> <%= variant[j]%> ) <%=questions[i].answers[j] %>
+                <input type="checkbox" class="check" id =a<%=i%> <%=j%> value="<%=j%>"> <%=questions[i].answers[j] %>
               </label>
             <% }; %>
           </div>

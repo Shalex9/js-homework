@@ -25,6 +25,9 @@ $(function(){
       }
     ]
   };
+  var q0 = test.questions[0].answers[test.questions[0].check];  console.log('q0: ', q0);
+  var q1 = test.questions[1].answers[test.questions[1].check];  console.log('q1: ', q1);
+  var q2 = test.questions[2].answers[test.questions[2].check];  console.log('q2: ', q2);
 
 //localStorage, JSON.stringify, JSON.parse
   // var genString = JSON.stringify(test);
@@ -39,12 +42,27 @@ $(function(){
 
   $("#result").click(function(){
       var current,k,flag="Тест пройден";
+
       for (var i=0;i<test.questions.length;i++){
         k=i+1;
         current ="#block"+ k +" input";
-        $(current).each(function(j) {
-          if ($(current).eq(j)[0].checked!=test.questions[i].check){flag = "Тест провален!";}
-        })
+        var ss = $('input:checked').parent().text();                               console.log('ss: ', ss);
+        var gg = $($(current).prop("checked")).parent().text();                    console.log('gg: ', gg);
+                                                                                  // console.log('test.questions[i].check : ', test.questions[i].check);
+        var ff = test.questions[i].answers[test.questions[i].check];   // console.log('ff :', ff);
+
+      //    // ВАРИАНТ c $('input:checked').parent().text()  и типом STRING
+        for (var j=0;j<current.length;j++){
+          if (($(ss).prop("checked")) != ff){flag = "Тест провален!";}
+        }
+      //    // ВАРИАНТ c val()  и типом NUMBER
+      //   $(current).each(function(j) {
+      //     if (((current).prop("checked").val()) != test.questions[i].check){flag = "Тест провален!";}
+      //   });
+      //    // ВАРИАНТ c prop()  и типом STRING
+      //   for (var j=0;j<current.length;j++){
+      //    if (($(current).prop("checked")) != ff){flag = "Тест провален!";}
+      //   }
       }
 
       var result = "RESULT: " + flag;
@@ -52,19 +70,21 @@ $(function(){
       var overlay = $('<div class="overlay"></div>')
       $("body").append(modal);
       $("body").append(overlay);
-
       overlay.one('click', hideModal);
       modal.one('click', hideModal);
 
       function hideModal() {
-          $('[type=checkbox]').prop("checked", false);
-          modal.remove();
-          overlay.remove();
+        $('[type=checkbox]').prop("checked", false);
+        modal.remove();
+        overlay.remove();
       }
+    });
+
+
   });
 
   // var d = Object.keys(test).length;                 console.log("Длинна объекта test:", d);
   // var z = test.questions[0].answers;                console.log("Массив ответов в вопросе 1:", z);
   // var f = test.questions[2].answers.length;         console.log("Количество ответов в вопросе 2:", f);
   // console.log("test: ", test);
-});
+// });
