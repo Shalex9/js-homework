@@ -1,8 +1,12 @@
+body{
+  background: #ccc;
+}
 #content{
   width: 700px;
   border: 1px solid #000;
   margin: 20px auto;
   font-family: Arial;
+  background: #eee;
 }
 h2 {
   text-align: center;
@@ -26,12 +30,17 @@ ul {
   list-style: none;
   font-size: 14px;
 }
+.inputBlock:hover{
+  cursor: pointer;
+  color: #777;
+}
 .check {
   width: 16px;
   height: 16px;
   margin-left: 10px;
   vertical-align: middle;
 }
+.check{cursor: pointer;}
 .text {
   margin-left: 5px;
 
@@ -49,4 +58,25 @@ ul {
   border: 2px solid #000;
   border-radius: 1px;
   background-color: lightblue;
+}
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 430px;
+  height: 100px;
+  margin: -75px 0 0 -225px;
+  padding: 10px;
+  background-color: #333;
+  color: #ccc;
+  font-size: 20px;
+  text-align: center;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, .5);
 }

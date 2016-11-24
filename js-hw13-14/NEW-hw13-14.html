@@ -12,13 +12,13 @@
     <article id="content"></article>
 
     <script type="text/html" id='wrapper'>
-      <h2>Тест по программированию</h2>
-        <% for (var i=0; i<3; i++) { %>
+      <h2><%= title%></h2>
+        <% for (var i=0; i<questions.length; i++) { %>
           <div id="block<%=[i+1]%>">
-            <h3 class="question"> №<%=i+1%> <%=q0.title%> </h3>
-            <% for (var j=0; j<q0.answers.length; j++) {%>
+            <h3 class="question"> №<%=i+1%> <%=questions[i].title%> </h3>
+            <% for (var j=0; j<questions[i].answers.length; j++) {%>
               <label class="inputBlock">
-                <input type= checkbox class="check"> <%=q0.answers[j] %>
+                <input type="checkbox" class="check" value="<%=j%>"> <%= variant[j]%> ) <%=questions[i].answers[j] %>
               </label>
             <% }; %>
           </div>
