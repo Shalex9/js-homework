@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+  <script src="js/shablonizator.js"></script>
+  <script src="js/js.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="logo">
+    <img src="img/googlelogo.png" alt="">
+    <p> By Shalex </p>
+  </div>
+
+  <div class="form" id="search">
+    <input class="input" type="text" placeholder="Че искать будем?">
+    <button class="searchButton" type="button">Искать</button>
+  </div>
+
+  <div class="boxForRezult"></div>
+
+  <script type="text/html" id='wrapper'>
+    <% for (var i=0; i<1; i++) { %>
+    <div class="info">
+        <h3><%= hits[i].user %></h3>
+        <h5><span class="text">downloads: </span><%= hits[i].downloads %></h5>
+    </div>
+    <% }; %>
+  </script>
+</body>
+</html>
