@@ -36,10 +36,10 @@ $(document).ready(function(){
     $(".accordion__title-box").click(function(){
         $(this).next(".accordion__text").slideToggle("slow")
             .siblings(".accordion__text:visible").slideUp("slow");
-        // var text = $(this).find(".accordion__plus-minus").text(); // меняем контент:  .text(text == "+" ? "-" : "+")
+        // или как вариант вместо ::before использовать: var text = $(this).find(".accordion__plus-minus").text(); // меняем контент:  .text(text == "+" ? "-" : "+")
 
         $(this).toggleClass("active");
-        $(this).siblings("accordion__title-box").removeClass("active");
+        $(this).siblings().removeClass("active").find(".accordion__plus-minus").removeClass("active-plus");
         $(this).find(".accordion__plus-minus").toggleClass("active-plus");
     });
      //  END Accordion
