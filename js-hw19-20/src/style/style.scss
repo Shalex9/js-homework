@@ -38,37 +38,37 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .header__logo{
+  .logo{
     float: left;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     text-decoration: none;
-    &__logoText{
+    .logo__logoText{
       margin-left: 10px;
-      &__h3{
+      .logo__h3{
         color: #434343;
         font-family: $UbMed;
         font-size: 26px;
       }
-      &__h5{
+      .logo__h5{
         color: #7a7a7a;
         font-family: 'Ubuntu-Light', sans-serif;
         font-size: 11px;
       }
     }
   }
-  .header__social{
+  .social{
     float: right;
     a{
       display: inline-block;
       margin-left: 20px;
+    .social__facebook{@include sprite($facebook); &:hover{@include sprite($facebook-b)}}
+    .social__twitter{@include sprite($twitter); &:hover{@include sprite($twitter-b)}}
+    .social__rss{@include sprite($rss); &:hover{@include sprite($rss-b)}}
+    .social__linkedin{@include sprite($linkedin); &:hover{@include sprite($linkedin-b)}}
+    .social__skype{@include sprite($skype); &:hover{@include sprite($skype-b)}}
     }
-    &__facebook{@include sprite($facebook); &:hover{@include sprite($facebook-b)}}
-    &__twitter{@include sprite($twitter); &:hover{@include sprite($twitter-b)}}
-    &__rss{@include sprite($rss); &:hover{@include sprite($rss-b)}}
-    &__linkedin{@include sprite($linkedin); &:hover{@include sprite($linkedin-b)}}
-    &__skype{@include sprite($skype); &:hover{@include sprite($skype-b)}}
   }
   .clearfix{
     display: block;
@@ -83,12 +83,12 @@ header{
     height: 45px;
     background-color: #2a2d32;
     margin: $center;
-    &__ul{
+    .menu__list{
       float: left;
-      &__li{
+      .menu__item{
         display: inline-block;
         width: 125px;
-        &__a{
+        .menu__link{
           color: #fff;
           text-decoration: none;
           border-right: 1px solid black;
@@ -105,11 +105,11 @@ header{
         }
       }
     }
-    &__search{
+    .menu__form{
       float: right;
       line-height: 45px;
       position: relative;
-      &__input {
+      .menu__form__input {
       	width: 300px;
       	font-size: 13px;
       	padding: 6px 0 4px 10px;
@@ -119,7 +119,7 @@ header{
         color: #57595c;
         margin-right: 10px;
       }
-      &__img{
+      .menu__form__img{
         position: absolute;
         left: 278px;
         top: 15px;
@@ -131,30 +131,30 @@ header{
 .firstArticle{
   width: $fullDisplay;
   margin: $center;
-  &__slider{
+  .slider{
     position: relative;
     height: 473px;
     width: $fullDisplay;
     overflow: hidden;
     margin-top: 30px;
     float: left;
-    &__list{
+    .slider__list{
       list-style: none;
-      &__element{
+      .slider__item{
         display: block;
-        &__img1 {
+        .slider__img1 {
           position: absolute;
           top: -205px;
           left: -75px;
           opacity: 0;
         }
-        &__img2{
+        .slider__img2{
           position: absolute;
           top: -305px;
           left: -175px;
           opacity: 0;
         }
-        &__img3{
+        .slider__img3{
           position: absolute;
           top: 0;
           left: 0;
@@ -162,7 +162,7 @@ header{
         }
       }
     }
-    &__text{
+    .slider-text{
       position: absolute;
       top:220px;
       left:70px;
@@ -170,23 +170,23 @@ header{
       font-family: $UbMed;
       color: #fff;
 
-      &__build{
+      .slider-text__build{
         color: #f4b60d;
         background: rgba(0, 0, 0, .7);
         width: 200px;
         padding: 15px 25px 0px;
       }
-      &__busines{
+      .slider-text__busines{
         background: rgba(0, 0, 0, .7);
         width: 285px;
         padding: 0px 25px 15px;
       }
     }
-    &__nav{
+    .slider__nav{
       position: absolute;
       top: 425px;
       left: 520px;
-      &__outside{
+      .slider__nav__outside{
         width: 20px;
         height: 20px;
         background: #fff;
@@ -194,7 +194,7 @@ header{
         margin-left: 15px;
         line-height: 20px;
         display: inline-block;
-        &__inside{
+        .slider__nav__inside{
           display: none;
           width: 12px;
           height: 12px;
@@ -204,40 +204,40 @@ header{
       }
     }
   }
-  &__clearfix{
+  .clearfix{
     display: block;
     height: 0;
     width: 0;
     clear: both;
   }
-  &__ourPlusses{
+  .box-advantage{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 50px;
-    &__num{
+    .box-advantage__num{
       font-size: 90px;
       font-family: $UbMed;
       color: #e9e9ea;
       margin-top: -15px;
     }
-    &__info{
+    .box-advantage__info{
       width: 240px;
-      &__img{
+      .box-advantage__img{
         height: 30px;
       }
-      &__h5{
+      .box-advantage__h5{
         font-size: 20px;
         font-family: $UbMed;
         color: #000;
       }
-      &__text{
+      .box-advantage__text{
         color: #9d9d9d;
         font-family: Arial, serif;
         font-size: 13px;
         margin: 20px auto;
       }
-      &__link{
+      .box-advantage__link{
         font-size: 13px;
         font-family: $UbMed;
         color: #000;
@@ -245,7 +245,7 @@ header{
         &:hover{
           color: #3695ec;
         }
-        &__img{
+        .box-advantage__readmore{
           margin-left: 10px;
         }
       }
@@ -253,58 +253,58 @@ header{
   }
 } //end .firstArticle
 
-.ourServices{
+.services{
   height: 450px;
   background: #2a2d32;
-  &__content{
+  .services__content{
     width: $fullDisplay;
     margin: $center;
-    &__p{
+    .services__title{
       font-size: 24px;
       font-family: $UbMed;
       color: #fff;
       padding-top: 35px;
       padding-bottom: 30px;
     }
-    &__item{
+    .services__list{
       display: flex;
       justify-content: space-between;
-      &__items{
-        &__img{
+      .services__item{
+        .services__linkimg{
           // background-color: rgba(54, 149, 236, 0.3);
           width: 250px;
           height: 230px;
           overflow: hidden;
           display: block;
-          &__picture{
+          .services__box-img{
             position: relative;
-            &__fon{
+            .services__box-img__1{
+              margin-left: -175px;
+            }
+            .services__box-img__2{
+              margin-left: -115px;
+              margin-top: -35px;
+            }
+            .services__box-img__3{
+              margin-top: -15px;
+            }
+            .services__box-img__4{
+              margin-left: -60px;
+            }
+            .services__box-img__fon{
               display: none;
               position: absolute;
               top: -15px;
               opacity: 0.9;
-              &__plus{
+              .services__box-img__plus{
                 position: absolute;
                 top: 115px;
                 left: 112px;
               }
             }
-            &__1{
-              margin-left: -175px;
-            }
-            &__2{
-              margin-left: -115px;
-              margin-top: -35px;
-            }
-            &__3{
-              margin-top: -15px;
-            }
-            &__4{
-              margin-left: -60px;
-            }
           }
         }
-        &__a{
+        .services__link{
           display: block;
           text-align: center;
           font-size: 16px;
@@ -324,33 +324,40 @@ header{
 .news{
   height: 460px;
   background: #f7f7f7;
-  &__block{
+  .content{
     width: $fullDisplay;
     margin: $center;
-    &__blockLeft{
+    .blockLeft{
       float: left;
       width: 550px;
-      &__h3{
+      .blockLeft__title{
         font-size: 24px;
         font-family: $UbMed;
         color: #2a2d32;
         padding-top: 40px;
       }
-      &__table{
+      .blockLeft__table{
         margin-top: 30px;
-        &__tr1{
+        .blockLeft__tr{
           height: 170px;
           vertical-align: top;
-          &__td1{
+          .blockLeft__td1{
             position: relative;
-            &__news1{
+            .blockLeft__img1{
               width: 140px;
               height: 140px;
               background: url('../img/news1.jpg');
               background-position: -90px 0px;
               background-size: 175%;
             }
-            &__month{
+            .blockLeft__img2{
+              width: 140px;
+              height: 140px;
+              background: url('../img/news2.jpg');
+              background-position: -3px -12px;
+              background-size: 110%;
+            }
+            .blockLeft__month{
               position: absolute;
               top: 10px;
               left: -20px;
@@ -363,7 +370,7 @@ header{
               text-align: center;
               line-height: 40px;
             }
-            &__day{
+            .blockLeft__day{
               position: absolute;
               top: 50px;
               left: -20px;
@@ -377,9 +384,9 @@ header{
               line-height: 40px;
             }
           }
-          &__td2{
+          .blockLeft__td2{
             padding-left: 30px;
-            &__link{
+            .blockLeft__news-title{
               text-decoration: none;
               color: #000;
               font-size: 18px;
@@ -388,17 +395,17 @@ header{
                 color: #248cec;
               }
             }
-            &__p{
+            .blockLeft__news-info{
               color: #9d9d9d;
               margin-top: 5px;
-              &__author{
+              .blockLeft__author{
                 color: #248cec;
               }
-              &__comments{
+              .blockLeft__comments{
                 color: #248cec;
               }
             }
-            &__text{
+            .blockLeft__text{
               color: #9d9d9d;
               font-family: Arial, serif;
               font-size: 14px;
@@ -406,89 +413,22 @@ header{
             }
           }
         } //end   tr1
-        &__tr2{
-          height: 170px;
-          vertical-align: top;
-          &__td1{
-            position: relative;
-            &__news2{
-              width: 140px;
-              height: 140px;
-              background: url('../img/news2.jpg');
-              background-position: -3px -12px;
-              background-size: 110%;
-            }
-            &__month{
-              position: absolute;
-              top: 10px;
-              left: -20px;
-              color: #fff;
-              background-color: #248cec;
-              width: 40px;
-              height: 40px;
-              font-size: 15px;
-              font-family: $UbMed;
-              text-align: center;
-              line-height: 40px;
-            }
-            &__day{
-              position: absolute;
-              top: 50px;
-              left: -20px;
-              color: #000;
-              background-color: #f4b60d;
-              width: 40px;
-              height: 40px;
-              font-size: 18px;
-              font-family: $UbMed;
-              text-align: center;
-              line-height: 40px;
-            }
-          }
-          &__td2{
-            padding-left: 30px;
-            &__link{
-              text-decoration: none;
-              color: #000;
-              font-size: 18px;
-              font-family: $UbMed;
-              &:hover{
-                color: #248cec;
-              }
-            }
-            &__p{
-              color: #9d9d9d;
-              margin-top: 5px;
-              &__author{
-                color: #248cec;
-              }
-              &__comments{
-                color: #248cec;
-              }
-            }
-            &__text{
-              color: #9d9d9d;
-              font-family: Arial, serif;
-              font-size: 14px;
-              margin-top: 25px;
-            }
-          }
-        }  //end   tr2
+
       } //end   table
     } // end blockLeft
 
-    &__blockRight{
+    .blockRight{
       width: 550px;
       float: right;
-      &__h3{
+      .title{
         font-size: 24px;
         font-family: $UbMed;
         color: #000;
         padding-top: 40px;
       }
-      &__accordion{
+      .accordion{
         margin-top: 30px;
-        &__title{
+        .accordion__title-box{
           display: flex;
           justify-content: flex-start;
           height: 30px;
@@ -497,16 +437,16 @@ header{
           background: #fff;
           margin-bottom: 10px;
           line-height: 30px;
-          &__plusMinus{
+          .accordion__plus-minus{
             width: 30px;
             border-right: 1px solid #cfcfcf;
             padding-left: 10px;
             font-weight: bold;
           }
-          .activePlus{
+          .active-plus{
             border-right: none;
           }
-          &__h3{
+          .accordion__title{
             font-size: 14px;
             font-family: $UbMed;
             font-weight: bold;
@@ -517,7 +457,7 @@ header{
         .active{
           background: #f4b60d;
         }
-        &__p{
+        .accordion__text{
           font-size: 13px;
           font-family: Arial, serif;
           color: #9d9d9d;
@@ -553,44 +493,36 @@ header{
     margin: $center;
     display: flex;
     justify-content: space-between;
-    &__socials,
-    &__links,
-    &__blogroll,
-    &__aboutUs{
+    .footer__socials,
+    .footer__links,
+    .footer__blogroll,
+    .footer__aboutUs{
       width: 250px;
-      // display: flex;
-      // align-items: flex-start;
-    }
-    &__socials__h4,
-    &__links__h4,
-    &__blogroll__h4,
-    &__aboutUs__h4{
-      font-size: 16px;
-      font-family: $UbMed;
-      color: #fff;
-      padding-top: 50px;
-      padding-bottom: 30px;
-    }
-    &__socials__a,
-    &__links__a,
-    &__blogroll__a,
-    &__aboutUs__a{
-      text-decoration: none;
-      font-size: 14px;
-      font-family: Arial, serif;
-      color: #828385;
-      display: block;
-      padding-bottom: 10px;
-      padding-top: 10px;
-      &:hover{
-        color: #2582da;
+      h4{
+        font-size: 16px;
+        font-family: $UbMed;
+        color: #fff;
+        padding-top: 50px;
+        padding-bottom: 30px;
       }
-      &:not(:last-child){
-        border-bottom: 2px solid #393c40;
+      a{
+        text-decoration: none;
+        font-size: 14px;
+        font-family: Arial, serif;
+        color: #828385;
+        display: block;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        &:hover{
+          color: #2582da;
+        }
+        &:not(:last-child){
+          border-bottom: 2px solid #393c40;
+        }
       }
     }
   } //end content
-  &__end{
+  .footer-end{
     height: 50px;
     background: #35383c;
     &__content{
@@ -599,16 +531,14 @@ header{
       line-height: 50px;
       display: flex;
       justify-content: space-between;
-      &__info{
+      .footer-end__info{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        &__location{@include sprite($location)}
-        &__phone{@include sprite($phone)}
-        &__email{@include sprite($email)}
-        &__adress,
-        &__call,
-        &__mail{
+        .footer-end__location{@include sprite($location)}
+        .footer-end__phone{@include sprite($phone)}
+        .footer-end__email{@include sprite($email)}
+        .footer-end__box{
           text-decoration: none;
           font-size: 12px;
           font-family: Arial, serif;
@@ -617,7 +547,7 @@ header{
           padding-left: 10px;
         }
       }
-      &__copyright{
+      .footer-end__copyright{
         text-decoration: none;
         font-size: 12px;
         font-family: Arial, serif;
