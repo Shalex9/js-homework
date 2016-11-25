@@ -1,7 +1,7 @@
 requirejs.config({
   paths: {
     'jquery': 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery',
-    'shablonizator': 'js/shablonizator',
+    'template': 'js/template',
     'model': 'js/model',
     'view': 'js/view',
     'controller': 'js/controller'
@@ -10,14 +10,14 @@ requirejs.config({
     'jquery': {
       exports: 'jQuery'
     },
-    'shablonizator': {
-      exports: 'shablonizator'
+    'template': {
+      exports: 'template'
     }
   }
 });
 
 require(
-  ['jquery', 'shablonizator', 'model', 'view', 'controller'],
+  ['jquery', 'template', 'model', 'view', 'controller'],
   function ($, shablonizator, model, view, controller) {
     var firstToDoList = ['learn JS', 'learn CSS', 'learn HTML'];
     var model = new Model(firstToDoList);
