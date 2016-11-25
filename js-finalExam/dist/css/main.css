@@ -303,7 +303,20 @@ The `sprites` mixin generates identical output to the CSS template
       border-radius: 4px;
       background: #fff;
       border: 2px solid #333;
-      border-color: rgba(0, 0, 0, 0.7); }
+      border-color: rgba(0, 0, 0, 0.7);
+      overflow: hidden; }
+      .masonry .grid .grid-item .grid-item__title {
+        background: rgba(200, 200, 200, 0.4);
+        margin: 0 auto;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 312px; }
+        .masonry .grid .grid-item .grid-item__title .grid-item__title-author {
+          font-style: italic;
+          font-size: 20px;
+          color: #bbb; }
     .masonry .grid .gutter-sizer {
       width: 2%; }
     .masonry .grid .grid-item--width2 {

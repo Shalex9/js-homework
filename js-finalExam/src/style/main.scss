@@ -270,11 +270,26 @@
     background: #fff;
     border: 2px solid #333;
     border-color: hsla(0, 0%, 0%, 0.7);
+    overflow: hidden;
+      .grid-item__title{
+        background: rgba(200, 200, 200, 0.4);
+        margin: 0 auto;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 312px;
+        .grid-item__title-author{
+          font-style: italic;
+          font-size: 20px;
+          color: #bbb;
+        }
+      }
     }
     .gutter-sizer { width: 2%; }
     .grid-item--width2 { width: 66% }
-  }
-}
+  }  //end grid
+}  // end masonry
 
 .search{
   margin: $center;

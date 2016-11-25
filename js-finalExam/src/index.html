@@ -9,10 +9,10 @@
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/style320.css">
     <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 959px)" href="css/style768.css">
     <link rel="stylesheet" media="screen and (min-width: 960px)" href="css/style960.css">
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-  <script src="js/packery-mode.pkgd.js"></script>
-  <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="js/packery-mode.pkgd.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
   <header class="header">
@@ -109,24 +109,31 @@
   <section class="masonry">
     <h1>Discover holiday activity ideas</h1>
     <div class="grid">
-      <div class="grid-item">1</div>
-      <!-- <div class="gutter-sizer"></div> -->
+      <!-- <script type="text/html" id='wrapper'>
+        <% for (var i=0; i<7; i++) { %>
+        <div class="grid-item">
+            <h3><%= hits[i].user %></h3>
+            <h5><span class="text">downloads: </span><%= hits[i].downloads %></h5>
+        </div>
+        <% }; %>
+      </script> -->
+      <!-- <div class="grid-item">1</div>
       <div class="grid-item">2</div>
       <div class="grid-item">3</div>
       <div class="grid-item">4</div>
       <div class="grid-item grid-item--width2 ">5</div>
       <div class="grid-item grid-item--width2">6</div>
-      <div class="grid-item">7</div>
+      <div class="grid-item">7</div> -->
     </div>
   </section>
 
   <section class="search">
     <h1>Discover holiday activity ideas</h1>
     <h4>Hi! What are your holiday interests?</h4>
-    <form class="form">
+    <div class="form">
       <input class="form__input" type="text" name="" value="" placeholder="Enter your interests">
       <button class="form__button" type="button" name="button">Search parthers</button>
-    </form>
+    </div>
   </section>
 
   <hr class="redline">
@@ -148,8 +155,7 @@
       <img class="designer__icon" src="img/designerIcon.png" alt="">
     </div>
   </footer>
-
-<!-- Масонри скрипт - почему-то работает только здесь, в остовном хтмл не работает -->
+<!-- Масонри скрипт - почему-то работает только здесь, в main.js не работает -->
   <script type="text/javascript">
       $('.grid').isotope({
         layoutMode: 'packery',
