@@ -110,11 +110,12 @@ gulp.task('fonts:build', function() {
 gulp.task('sprite', function () {
   var spriteData = gulp.src('src/img/icon/*.png')
     .pipe(spritesmith({
-      imgName: 'sprite.png',
-      cssName: 'sprite.scss',
+      imgName: 'sprite1.png',
+      cssName: 'sprite1.scss',
       algorithm: 'top-down'
     }));
-  return spriteData.pipe(gulp.dest('src/img/'));
+  spriteData.img.pipe(gulp.dest('src/img/'));
+  spriteData.css.pipe(gulp.dest('src/style/'));
 });
 
 gulp.task('build', [

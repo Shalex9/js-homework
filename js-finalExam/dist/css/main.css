@@ -120,89 +120,142 @@ The `sprites` mixin generates identical output to the CSS template
         background: #ff4e50;
         margin: 0 auto; }
 
-.howItWorks .content .title {
+.works .content .title {
   font-family: "Montserrat-Bold", sans-serif;
   text-align: center;
   letter-spacing: 0.6px; }
 
-.howItWorks .content .steps .step-1, .howItWorks .content .steps .step-2, .howItWorks .content .steps .step-3 {
-  background: url("../img/howItWorks_img1.png");
-  background-position: center center;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-  z-index: 1; }
-  .howItWorks .content .steps .step-1::after, .howItWorks .content .steps .step-2::after, .howItWorks .content .steps .step-3::after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    background: -webkit-linear-gradient(bottom, #000 35%, transparent 70%);
-    background: linear-gradient(to top, #000 35%, transparent 70%);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    opacity: 0.5;
-    z-index: 2; }
-  .howItWorks .content .steps .step-1 .step__content, .howItWorks .content .steps .step-2 .step__content, .howItWorks .content .steps .step-3 .step__content {
-    position: absolute;
-    z-index: 3; }
-    .howItWorks .content .steps .step-1 .step__content .step__arrows, .howItWorks .content .steps .step-2 .step__content .step__arrows, .howItWorks .content .steps .step-3 .step__content .step__arrows {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .howItWorks .content .steps .step-1 .step__content .step__arrows .step__arrows__left, .howItWorks .content .steps .step-2 .step__content .step__arrows .step__arrows__left, .howItWorks .content .steps .step-3 .step__content .step__arrows .step__arrows__left {
-        background-image: url(../img/sprite.png);
-        background-position: 0px -160px;
-        width: 30px;
-        height: 55px; }
-      .howItWorks .content .steps .step-1 .step__content .step__arrows .step__arrows__right, .howItWorks .content .steps .step-2 .step__content .step__arrows .step__arrows__right, .howItWorks .content .steps .step-3 .step__content .step__arrows .step__arrows__right {
-        background-image: url(../img/sprite.png);
-        background-position: 0px -215px;
-        width: 30px;
-        height: 55px; }
-    .howItWorks .content .steps .step-1 .step__content .step__info, .howItWorks .content .steps .step-2 .step__content .step__info, .howItWorks .content .steps .step-3 .step__content .step__info {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .howItWorks .content .steps .step-1 .step__content .step__info .step__info__button, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__button, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__button {
-        display: block;
-        font-family: 'Montserrat-Regular', sans-serif;
-        background: #ff4e50;
-        text-decoration: none;
-        color: #fff;
-        text-align: center;
-        letter-spacing: 0.7px; }
-      .howItWorks .content .steps .step-1 .step__content .step__info .step__info__title, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__title, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__title {
-        font-family: "Montserrat-Bold", sans-serif;
-        color: #fff;
-        letter-spacing: 1.1px; }
-      .howItWorks .content .steps .step-1 .step__content .step__info .step__info__text, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__text, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__text {
-        font-family: 'Roboto-Light', sans-serif;
-        color: #ccc;
-        letter-spacing: -0.2px; }
-
-.howItWorks .content .steps .step-2 {
-  background: url("../img/howItWorks_img2.png");
-  background-position: center center;
-  background-size: cover; }
-
-.howItWorks .content .steps .step-3 {
-  background: url("../img/howItWorks_img3.png");
-  background-position: center center;
-  background-size: cover; }
+.works .content .carousel-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .works .content .carousel-box .carousel-1,
+  .works .content .carousel-box .carousel-2,
+  .works .content .carousel-box .carousel-3 {
+    width: 300px;
+    height: 400px; }
+    .works .content .carousel-box .carousel-1 .slider__box,
+    .works .content .carousel-box .carousel-2 .slider__box,
+    .works .content .carousel-box .carousel-3 .slider__box {
+      height: 400px;
+      width: 300px;
+      overflow: hidden;
+      float: left;
+      position: relative;
+      z-index: 1; }
+      .works .content .carousel-box .carousel-1 .slider__box .slider__list,
+      .works .content .carousel-box .carousel-2 .slider__box .slider__list,
+      .works .content .carousel-box .carousel-3 .slider__box .slider__list {
+        width: 10000px;
+        padding: 0;
+        position: relative; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__list .slider__elem,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__list .slider__elem,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__list .slider__elem {
+          display: block;
+          margin-right: 20px;
+          float: left;
+          list-style: none;
+          height: 400px; }
+          .works .content .carousel-box .carousel-1 .slider__box .slider__list .slider__elem .slider__img,
+          .works .content .carousel-box .carousel-2 .slider__box .slider__list .slider__elem .slider__img,
+          .works .content .carousel-box .carousel-3 .slider__box .slider__list .slider__elem .slider__img {
+            height: 100%;
+            position: relative;
+            z-index: 1; }
+            .works .content .carousel-box .carousel-1 .slider__box .slider__list .slider__elem .slider__img:first-child,
+            .works .content .carousel-box .carousel-2 .slider__box .slider__list .slider__elem .slider__img:first-child,
+            .works .content .carousel-box .carousel-3 .slider__box .slider__list .slider__elem .slider__img:first-child {
+              margin-left: -148px; }
+      .works .content .carousel-box .carousel-1 .slider__box .slider__box-gradient,
+      .works .content .carousel-box .carousel-2 .slider__box .slider__box-gradient,
+      .works .content .carousel-box .carousel-3 .slider__box .slider__box-gradient {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(bottom, #000 35%, transparent 100%);
+        background: linear-gradient(to top, #000 35%, transparent 100%);
+        opacity: 0.5;
+        z-index: 2; }
+      .works .content .carousel-box .carousel-1 .slider__box .slider__content-box,
+      .works .content .carousel-box .carousel-2 .slider__box .slider__content-box,
+      .works .content .carousel-box .carousel-3 .slider__box .slider__content-box {
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        z-index: 3; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__arrow-box,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__arrow-box,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__arrow-box {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-left,
+          .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-left,
+          .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-left {
+            background-image: url(../img/sprite.png);
+            background-position: 0px -160px;
+            width: 30px;
+            height: 55px; }
+            .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-left:hover,
+            .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-left:hover,
+            .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-left:hover {
+              cursor: pointer; }
+          .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-right,
+          .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-right,
+          .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-right {
+            background-image: url(../img/sprite.png);
+            background-position: 0px -215px;
+            width: 30px;
+            height: 55px; }
+            .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-right:hover,
+            .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-right:hover,
+            .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-right:hover {
+              cursor: pointer; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-button,
+          .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-button,
+          .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-button {
+            display: block;
+            font-family: 'Montserrat-Regular', sans-serif;
+            background: #ff4e50;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            letter-spacing: 0.7px; }
+          .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-title,
+          .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-title,
+          .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-title {
+            font-family: "Montserrat-Bold", sans-serif;
+            color: #fff;
+            letter-spacing: 1.1px; }
+          .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-text,
+          .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-text,
+          .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-text {
+            font-family: 'Roboto-Light', sans-serif;
+            color: #ccc;
+            letter-spacing: -0.2px; }
 
 .partners {
   margin: 0 auto; }

@@ -1,6 +1,14 @@
 $(function () {
+  $('.carousel').slider(); //запускает слайдер
+
     function send() {
       // $('.searchButton').click (function () {
+
+      function clear() {
+        $('.grid').removeChild(this);
+      }
+      if($('.grid').children() > 0) {clear()}
+
       var poisk = $(".form__input").val().split(" ");
 
         $.ajax({
@@ -43,4 +51,19 @@ $(function () {
     $('.form__input').on('keypress', enter);  //запускаю поиск по нажатию на энтер
 
     $(document).ready(send());  //запускаю при полной загрузке страницы загрузку картинок в плитку
+    //   //Попытка с анимацией
+    // var step1= document.getElementByClasssName('step-1'),
+    //     right = document.getElementByClasssName('step__arrows__right');
+    // $(".step-1").click(function() {
+    //   this.style.backgroundPosition = "initial";
+    //   this.style.backgroundImage = "url('../img/howItWorks_img2.png')";
+    //   $(".step-1").click(function() {
+    //     this.style.backgroundImage = "url('../img/howItWorks_img3.png')";
+    //     this.style.backgroundPosition = "center center";
+    //     $(".step-1").click(function() {
+    //       this.style.backgroundImage = "url('../img/howItWorks_img1.png')";
+    //       this.style.backgroundPosition = "initial";
+    //     });
+    //   });
+    // });
 }), (jQuery);

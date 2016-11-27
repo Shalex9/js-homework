@@ -48,7 +48,7 @@
   } //end content
 } //end header
 
-.howItWorks{
+.works{
   .content{
     width: 940px;
     margin: $center;
@@ -56,39 +56,57 @@
       font-size: 22px;
       margin-top: 95px;
     }
-    .steps{
-      display: flex;
-      justify-content: space-between;
+    .carousel-box{
       margin-top: 34px;
-      .step-1, .step-2, .step-3 {
-        width: 300px;
-        height: 400px;
-        .step__content{
-          padding: 19px;
-          padding-top: 153px;
-          .step__info{
-            height: 175px;
-            .step__info__button{
-              font-size: 10px;
-              width: 70px;
-              height: 20px;
-              line-height: 20px;
-              border-radius: 10px;
-            }
-            .step__info__title{
-              font-size: 24px;
-              padding-top: 17px;
-            }
-            .step__info__text{
-              font-size: 14px;
-              padding-top: 14px;
-            }
-          } // end info
-        } // end content
-      } //end step1, step2, step3
-    } //end steps
-  } //end content
-} // end howItWorks
+      .carousel-1,
+      .carousel-2,
+      .carousel-3{
+        .slider__box{
+          .slider__list{
+            width: 10000px;
+            padding: 0;
+            position: relative;
+            .slider__elem{
+              display: block;
+              margin-right: 20px;
+              float: left;
+              list-style: none;
+              height: 400px;
+              .slider__img{
+                margin-left: -148px;
+                height: 100%;
+                position: relative;
+                z-index: 1;
+              }
+            } //slider__elem
+          } //slider__list
+          .slider__content-box{
+            padding: 19px;
+            padding-top: 153px;
+            .slider__info-box{
+              height: 175px;
+              .slider__info-button{
+                font-size: 10px;
+                width: 70px;
+                height: 20px;
+                line-height: 20px;
+                border-radius: 10px;
+              }
+              .slider__info-title{
+                font-size: 24px;
+                padding-top: 17px;
+              }
+              .slider__info-text{
+                font-size: 14px;
+                padding-top: 14px;
+              }
+            } //slider__info-box
+          } //slider__content-box
+        } //slider__box
+      } //carousel
+    } //carousel-box
+  } //content
+} //works
 
 .partners{
   width: 940px;

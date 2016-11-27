@@ -82,40 +82,62 @@ The `sprites` mixin generates identical output to the CSS template
         line-height: 40px;
         margin-top: 34px; }
 
-.howItWorks .content {
+.works .content {
   width: 940px;
   margin: 0 auto; }
-  .howItWorks .content .title {
+  .works .content .title {
     font-size: 22px;
     margin-top: 95px; }
-  .howItWorks .content .steps {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .works .content .carousel-box {
     margin-top: 34px; }
-    .howItWorks .content .steps .step-1, .howItWorks .content .steps .step-2, .howItWorks .content .steps .step-3 {
-      width: 300px;
-      height: 400px; }
-      .howItWorks .content .steps .step-1 .step__content, .howItWorks .content .steps .step-2 .step__content, .howItWorks .content .steps .step-3 .step__content {
-        padding: 19px;
-        padding-top: 153px; }
-        .howItWorks .content .steps .step-1 .step__content .step__info, .howItWorks .content .steps .step-2 .step__content .step__info, .howItWorks .content .steps .step-3 .step__content .step__info {
-          height: 175px; }
-          .howItWorks .content .steps .step-1 .step__content .step__info .step__info__button, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__button, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__button {
-            font-size: 10px;
-            width: 70px;
-            height: 20px;
-            line-height: 20px;
-            border-radius: 10px; }
-          .howItWorks .content .steps .step-1 .step__content .step__info .step__info__title, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__title, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__title {
-            font-size: 24px;
-            padding-top: 17px; }
-          .howItWorks .content .steps .step-1 .step__content .step__info .step__info__text, .howItWorks .content .steps .step-2 .step__content .step__info .step__info__text, .howItWorks .content .steps .step-3 .step__content .step__info .step__info__text {
-            font-size: 14px;
-            padding-top: 14px; }
+    .works .content .carousel-box .carousel-1 .slider__box .slider__list,
+    .works .content .carousel-box .carousel-2 .slider__box .slider__list,
+    .works .content .carousel-box .carousel-3 .slider__box .slider__list {
+      width: 10000px;
+      padding: 0;
+      position: relative; }
+      .works .content .carousel-box .carousel-1 .slider__box .slider__list .slider__elem,
+      .works .content .carousel-box .carousel-2 .slider__box .slider__list .slider__elem,
+      .works .content .carousel-box .carousel-3 .slider__box .slider__list .slider__elem {
+        display: block;
+        margin-right: 20px;
+        float: left;
+        list-style: none;
+        height: 400px; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__list .slider__elem .slider__img,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__list .slider__elem .slider__img,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__list .slider__elem .slider__img {
+          margin-left: -148px;
+          height: 100%;
+          position: relative;
+          z-index: 1; }
+    .works .content .carousel-box .carousel-1 .slider__box .slider__content-box,
+    .works .content .carousel-box .carousel-2 .slider__box .slider__content-box,
+    .works .content .carousel-box .carousel-3 .slider__box .slider__content-box {
+      padding: 19px;
+      padding-top: 153px; }
+      .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box,
+      .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box,
+      .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box {
+        height: 175px; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-button,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-button,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-button {
+          font-size: 10px;
+          width: 70px;
+          height: 20px;
+          line-height: 20px;
+          border-radius: 10px; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-title,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-title,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-title {
+          font-size: 24px;
+          padding-top: 17px; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-text,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-text,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-text {
+          font-size: 14px;
+          padding-top: 14px; }
 
 .partners {
   width: 940px; }
