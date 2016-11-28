@@ -27,9 +27,10 @@ $(function () {
       url: 'https://pixabay.com/api/?key=3750037-59b70644a0ea3a4147bb2a2ad&q=' + poisk.join("+") + '&image_type=photo',
       dataType: 'json',
       success: function success(data) {
+        console.log('Объект данных с pixabay: ', data);
         if (data.hits.length > 0) {
           for (var i = 0; i < 7; i++) {
-            $('.grid-item').append('<p class="grid-item__title"><span class="grid-item__title-author">Autor: </span>' + data.hits[i].user + '</p>');
+            $('.image' + [i + 1]).append('<a href=" ' + data.hits[i].webformatURL + ' " class="grid-item__title"><span class="grid-item__title-author">Autor: </span>' + data.hits[i].user + '</a>');
             $('.image' + [i + 1]).css({ 'backgroundImage': 'url("' + data.hits[i].webformatURL + '")' });
           }
         }

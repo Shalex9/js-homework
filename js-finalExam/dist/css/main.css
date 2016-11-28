@@ -1,3 +1,33 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat.woff2") format("woff2"), url("../fonts/Montserrat.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat-Bold"), url("../fonts/Montserrat-bold.woff2") format("woff2"), url("../fonts/Montserrat-bold.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
 
@@ -48,24 +78,6 @@ The `sprites` mixin generates identical output to the CSS template
   padding: 0;
   box-sizing: border-box; }
 
-@font-face {
-  font-family: 'Montserrat-Regular';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Montserrat-Regular.ttf") format("ttf"); }
-
-@font-face {
-  font-family: 'Montserrat-Bold';
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/Montserrat-Bold.ttf") format("ttf"); }
-
-@font-face {
-  font-family: 'Roboto-Light';
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/Roboto-Light.ttf") format("ttf"); }
-
 .header {
   background: url("../img/main.jpg") center center;
   width: 100%; }
@@ -74,7 +86,7 @@ The `sprites` mixin generates identical output to the CSS template
     .header__content .header__menu {
       color: #fff; }
       .header__content .header__menu .logo {
-        font-family: "Montserrat-Bold", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: bold;
         letter-spacing: 0.8px;
         text-decoration: none;
@@ -87,7 +99,7 @@ The `sprites` mixin generates identical output to the CSS template
             -ms-flex-pack: end;
                 justify-content: flex-end; }
         .header__content .header__menu .header__list .header__list-item {
-          font-family: "Montserrat-Bold", sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-weight: bold;
           box-sizing: border-box;
           text-decoration: none;
@@ -103,27 +115,24 @@ The `sprites` mixin generates identical output to the CSS template
       margin: 0 auto;
       text-align: center; }
       .header__content .textBox__title {
-        font-family: "Montserrat-Bold", sans-serif;
+        font-family: "Montserrat", sans-serif;
         color: #fff; }
       .header__content .textBox__text {
-        font-family: 'Roboto-Light', sans-serif;
+        font-family: "Roboto", sans-serif;
         color: #fff; }
       .header__content .textBox__button {
         display: block;
-        font-family: "Montserrat-Bold", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: bold;
         text-decoration: none;
         color: #fff;
-        width: 300px;
-        height: 100px;
         border-radius: 20px;
         background: #ff4e50;
         margin: 0 auto; }
 
 .works .content .title {
-  font-family: "Montserrat-Bold", sans-serif;
-  text-align: center;
-  letter-spacing: 0.6px; }
+  font-family: "Montserrat", sans-serif;
+  text-align: center; }
 
 .works .content .carousel-box {
   display: -webkit-box;
@@ -184,7 +193,7 @@ The `sprites` mixin generates identical output to the CSS template
       .works .content .carousel-box .carousel-2 .slider__box .slider__content-box,
       .works .content .carousel-box .carousel-3 .slider__box .slider__content-box {
         position: absolute;
-        width: 300px;
+        width: 297px;
         height: 400px;
         z-index: 3; }
         .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__arrow-box,
@@ -221,46 +230,33 @@ The `sprites` mixin generates identical output to the CSS template
         .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box,
         .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box,
         .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: start;
-              -ms-flex-align: start;
-                  align-items: flex-start;
-          -webkit-box-pack: end;
-              -ms-flex-pack: end;
-                  justify-content: flex-end;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column; }
+          margin-top: 21px; }
           .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-button,
           .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-button,
           .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-button {
             display: block;
-            font-family: 'Montserrat-Regular', sans-serif;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
             background: #ff4e50;
             text-decoration: none;
             color: #fff;
             text-align: center;
-            letter-spacing: 0.7px; }
+            letter-spacing: 2px; }
           .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-title,
           .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-title,
           .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-title {
-            font-family: "Montserrat-Bold", sans-serif;
-            color: #fff;
-            letter-spacing: 1.1px; }
+            font-family: "Montserrat", sans-serif;
+            color: #fff; }
           .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-text,
           .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-text,
           .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-text {
-            font-family: 'Roboto-Light', sans-serif;
-            color: #ccc;
-            letter-spacing: -0.2px; }
+            font-family: "Roboto", sans-serif;
+            color: #ccc; }
 
 .partners {
   margin: 0 auto; }
   .partners h1 {
-    font-family: "Montserrat-Bold", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-align: center; }
   .partners .blockPartners .box-1, .partners .blockPartners .box-2, .partners .blockPartners .box-3, .partners .blockPartners .box-4 {
@@ -277,18 +273,18 @@ The `sprites` mixin generates identical output to the CSS template
         top: 86px;
         left: 85px; }
     .partners .blockPartners .box-1 .box__name, .partners .blockPartners .box-2 .box__name, .partners .blockPartners .box-3 .box__name, .partners .blockPartners .box-4 .box__name {
-      font-family: "Montserrat-Bold", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: bold;
       text-align: center;
-      margin-top: 18px;
-      letter-spacing: 0.3px; }
+      margin-top: 17px; }
     .partners .blockPartners .box-1 .box__comment, .partners .blockPartners .box-2 .box__comment, .partners .blockPartners .box-3 .box__comment, .partners .blockPartners .box-4 .box__comment {
-      font-family: 'Roboto-Light', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-weight: normal;
       color: #666;
-      margin-top: 14px;
+      margin-top: 12px;
+      line-height: 17px;
       text-align: center;
-      letter-spacing: -0.3px; }
+      letter-spacing: 0.1px; }
   .partners .blockPartners .box-1 .box__img {
     background: url("../img/partner1.png"); }
     .partners .blockPartners .box-1 .box__img .box__img__icon {
@@ -325,21 +321,19 @@ The `sprites` mixin generates identical output to the CSS template
     background: transparent;
     border: 2px solid #ff4e50;
     border-radius: 20px;
-    font-family: "Montserrat-Bold", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    color: #ff4e50;
-    letter-spacing: 0.4px; }
+    color: #ff4e50; }
 
 .masonry {
   height: 1140px;
   margin: 0 auto; }
   .masonry h1 {
-    font-family: "Montserrat-Bold", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 22px;
     color: #333333;
-    text-align: center;
-    letter-spacing: 0.6px; }
+    text-align: center; }
   .masonry .grid {
     margin-top: 34px; }
     .masonry .grid:after {
@@ -351,20 +345,27 @@ The `sprites` mixin generates identical output to the CSS template
       width: 32%; }
     .masonry .grid .grid-item {
       float: left;
-      height: 312px;
+      height: 309px;
       border-radius: 5px;
       background: #fff;
       background-position: center;
       background-size: cover;
       overflow: hidden; }
       .masonry .grid .grid-item .grid-item__title {
+        display: block;
         margin: 0 auto;
         color: #fff;
-        font-size: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
         font-weight: bold;
         text-align: center;
-        line-height: 312px; }
+        line-height: 312px;
+        text-decoration: none; }
+        .masonry .grid .grid-item .grid-item__title:hover {
+          color: #ccc;
+          background: rgba(200, 200, 200, 0.4); }
         .masonry .grid .grid-item .grid-item__title .grid-item__title-author {
+          font-family: "Roboto", sans-serif;
           font-style: italic;
           font-size: 20px;
           color: #bbb; }
@@ -376,12 +377,11 @@ The `sprites` mixin generates identical output to the CSS template
 .search {
   margin: 0 auto; }
   .search h1 {
-    font-family: "Montserrat-Bold", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    text-align: center;
-    letter-spacing: 0.6px; }
+    text-align: center; }
   .search h4 {
-    font-family: "Roboto-Light", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 200;
     text-align: center; }
   .search .form__input {
@@ -399,10 +399,9 @@ The `sprites` mixin generates identical output to the CSS template
     border-radius: 20px;
     background: #ff4e50;
     color: #fff;
-    font-family: "Montserrat-Bold", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 14px;
-    letter-spacing: 0.4px;
     cursor: pointer; }
 
 .redline {
@@ -413,27 +412,24 @@ footer {
   margin: 0 auto; }
   footer .logo--footer {
     float: left;
-    font-family: "Montserrat-Bold", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    letter-spacing: 0.8px;
     color: #ff4e50;
     text-decoration: none; }
   footer .company, footer .partners {
     float: left;
     width: 140px;
-    letter-spacing: 0.5px;
     margin-bottom: 35px; }
     footer .company__title, footer .partners__title {
-      font-family: "Montserrat-Bold", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: bold;
-      margin-bottom: 14px; }
+      margin-bottom: 11px; }
     footer .company__link, footer .partners__link {
       display: block;
-      margin-top: 8px;
-      letter-spacing: -0.2px;
+      margin-top: 5px;
       text-decoration: none;
       color: #666;
-      font-family: 'Roboto-Light', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-weight: normal;
       font-size: 14px; }
       footer .company__link:hover, footer .partners__link:hover {
@@ -442,7 +438,7 @@ footer {
     float: right;
     text-decoration: none; }
     footer .designer__text {
-      font-family: "Montserrat-Bold", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: bold;
       font-size: 10px;
       color: #ccc;

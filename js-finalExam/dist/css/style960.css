@@ -60,7 +60,7 @@ The `sprites` mixin generates identical output to the CSS template
               align-items: center; }
       .header__content .header__menu .logo {
         font-size: 20px;
-        padding-top: 5px; }
+        padding-top: 4px; }
       .header__content .header__menu .header__list .header__list-item {
         font-size: 14px;
         margin-right: 1px; }
@@ -68,16 +68,17 @@ The `sprites` mixin generates identical output to the CSS template
           margin-right: -3px; }
     .header__content .textBox {
       width: 505px;
-      margin-top: 143px; }
+      margin-top: 141px; }
       .header__content .textBox__title {
         font-size: 50px;
-        line-height: 61px; }
+        line-height: 62px;
+        letter-spacing: 1.4px; }
       .header__content .textBox__text {
         font-size: 24px;
-        margin-top: 25px; }
+        margin-top: 22px; }
       .header__content .textBox__button {
         font-size: 14px;
-        width: 220px;
+        width: 225px;
         height: 40px;
         line-height: 40px;
         margin-top: 34px; }
@@ -87,7 +88,8 @@ The `sprites` mixin generates identical output to the CSS template
   margin: 0 auto; }
   .works .content .title {
     font-size: 22px;
-    margin-top: 95px; }
+    margin-top: 94px;
+    margin-left: -5px; }
   .works .content .carousel-box {
     margin-top: 34px; }
     .works .content .carousel-box .carousel-1 .slider__box .slider__list,
@@ -119,7 +121,7 @@ The `sprites` mixin generates identical output to the CSS template
       .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box,
       .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box,
       .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box {
-        height: 175px; }
+        height: 163px; }
         .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-button,
         .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-button,
         .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-button {
@@ -127,24 +129,36 @@ The `sprites` mixin generates identical output to the CSS template
           width: 70px;
           height: 20px;
           line-height: 20px;
-          border-radius: 10px; }
+          border-radius: 10px;
+          padding-left: 5px; }
         .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-title,
         .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-title,
         .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-title {
+          margin-top: -2px;
           font-size: 24px;
           padding-top: 17px; }
         .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-text,
         .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-text,
         .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-text {
           font-size: 14px;
-          padding-top: 14px; }
+          padding-top: 11px;
+          line-height: 17px; }
+    .works .content .carousel-box .carousel-2 .slider__content-box .slider__info-box {
+      width: 261px; }
+      .works .content .carousel-box .carousel-2 .slider__content-box .slider__info-box .slider__info-button {
+        margin-top: 52px; }
+      .works .content .carousel-box .carousel-2 .slider__content-box .slider__info-box .slider__info-title {
+        margin-top: -3px; }
+      .works .content .carousel-box .carousel-2 .slider__content-box .slider__info-box .slider__info-text {
+        margin-top: -2px;
+        letter-spacing: 0.1px; }
 
 .partners {
   width: 940px; }
   .partners h1 {
     font-size: 22px;
-    margin-top: 96px;
-    letter-spacing: 0.8px; }
+    margin-top: 95px;
+    margin-left: -5px; }
   .partners .blockPartners {
     height: 270px;
     margin-top: 31px;
@@ -170,14 +184,13 @@ The `sprites` mixin generates identical output to the CSS template
 .search {
   width: 413px;
   height: 160px;
-  margin-top: 80px; }
+  margin-top: 79px; }
   .search h1 {
     font-size: 22px;
     margin-left: -4px; }
   .search h4 {
     font-size: 18px;
-    margin-top: 33px;
-    letter-spacing: -0.2px;
+    margin-top: 30px;
     margin-left: -4px; }
   .search .form {
     display: -webkit-box;
@@ -189,14 +202,14 @@ The `sprites` mixin generates identical output to the CSS template
     margin-top: 37px; }
 
 .redline {
-  margin-top: 97px; }
+  margin-top: 98px; }
 
 footer {
-  padding-top: 36px;
+  padding-top: 35px;
   width: 940px; }
   footer .logo--footer {
     font-size: 15px;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.4px;
     width: 220px; }
   footer .company, footer .partners {
     margin-left: 19px; }
@@ -204,3 +217,7 @@ footer {
       font-size: 14px; }
   footer .designer {
     width: 110px; }
+    footer .designer__text {
+      margin-top: 1px; }
+    footer .designer__icon {
+      margin-top: 7px; }

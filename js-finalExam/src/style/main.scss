@@ -1,28 +1,11 @@
 @import "variables";
+@import "fonts";
 @import "../img/sprite";
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-@font-face {
-  font-family: 'Montserrat-Regular';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Montserrat-Regular.ttf") format('ttf');
-}
-@font-face {
-  font-family: 'Montserrat-Bold';
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/Montserrat-Bold.ttf") format('ttf');
-}
-@font-face {
-  font-family: 'Roboto-Light';
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/Roboto-Light.ttf") format('ttf');
 }
 
 .header{
@@ -67,7 +50,7 @@
         color: #fff;
       }
       &__text{
-        font-family: 'Roboto-Light', sans-serif;
+        font-family: $Roboto;
         color: #fff;
       }
       &__button{
@@ -76,10 +59,8 @@
         font-weight: bold;
         text-decoration: none;
         color: #fff;
-        width: 300px;
-        height: 100px;
         border-radius: 20px;
-        background: #ff4e50;
+        background: $red;
         margin: $center;
       }
     } //end textBox
@@ -91,7 +72,6 @@
     .title{
       font-family: $MonBold;
       text-align: center;
-      letter-spacing: 0.6px;
     }
     .carousel-box{
       display: flex;
@@ -136,7 +116,7 @@
           }
           .slider__content-box{
             position: absolute;
-            width: 300px;
+            width: 297px;
             height: 400px;
             z-index: 3;
             .slider__arrow-box{
@@ -146,28 +126,24 @@
               .slider__arrow-right{@include sprite($arrow-r); &:hover{cursor: pointer}}
             }
             .slider__info-box{
-              display: flex;
-              align-items: flex-start;
-              justify-content: flex-end;
-              flex-direction: column;
+              margin-top: 21px;
               .slider__info-button{
                 display: block;
-                font-family: 'Montserrat-Regular', sans-serif;
-                background: #ff4e50;
+                font-family: $MonBold;
+                font-weight: 300;
+                background: $red;
                 text-decoration: none;
                 color: #fff;
                 text-align: center;
-                letter-spacing: 0.7px;
+                letter-spacing: 2px;
               }
               .slider__info-title{
                 font-family: $MonBold;
                 color: #fff;
-                letter-spacing: 1.1px;
               }
               .slider__info-text{
-                font-family: 'Roboto-Light', sans-serif;
+                font-family: $Roboto;
                 color: #ccc;
-                letter-spacing: -0.2px;
               }
             } //slider__info-box
           } //slider__content-box
@@ -204,16 +180,16 @@
         font-family: $MonBold;
         font-weight: bold;
         text-align: center;
-        margin-top: 18px;
-        letter-spacing: 0.3px;
+        margin-top: 17px;
       }
       .box__comment{
-        font-family: 'Roboto-Light', sans-serif;;
+        font-family: $Roboto;
         font-weight: normal;
         color: #666;
-        margin-top: 14px;
+        margin-top: 12px;
+        line-height: 17px;
         text-align: center;
-        letter-spacing: -0.3px;
+        letter-spacing: 0.1px;
       }
     }
     .box-1{
@@ -247,12 +223,11 @@
     display: block;
     cursor: pointer;
     background: transparent;
-    border: 2px solid #ff4e50;
+    border: 2px solid $red;
     border-radius: 20px;
     font-family: $MonBold;
     font-weight: bold;
-    color: #ff4e50;
-    letter-spacing: 0.4px;
+    color: $red;
   }
 }
 
@@ -265,7 +240,6 @@
     font-size: 22px;
     color: #333333;
     text-align: center;
-    letter-spacing: 0.6px;
   }
   .grid {
     margin-top: 34px;
@@ -280,21 +254,28 @@
     }
     .grid-item{
     float: left;
-    height: 312px;
+    height: 309px;
     border-radius: 5px;
     background: #fff;
     background-position: center;
     background-size: cover;
     overflow: hidden;
       .grid-item__title{
-        // background: rgba(200, 200, 200, 0.4);
+        display: block;
         margin: 0 auto;
         color: #fff;
-        font-size: 30px;
+        font-family: $MonBold;
+        font-size: 22px;
         font-weight: bold;
         text-align: center;
         line-height: 312px;
+        text-decoration: none;
+        &:hover{
+          color: #ccc;
+          background: rgba(200, 200, 200, 0.4);
+        }
         .grid-item__title-author{
+          font-family: $Roboto;
           font-style: italic;
           font-size: 20px;
           color: #bbb;
@@ -312,10 +293,9 @@
     font-family: $MonBold;
     font-weight: bold;
     text-align: center;
-    letter-spacing: 0.6px;
   }
   h4{
-    font-family: "Roboto-Light", sans-serif;
+    font-family: $Roboto;
     font-weight: 200;
     text-align: center;
   }
@@ -334,12 +314,11 @@
       width: 160px;
       border: none;
       border-radius: 20px;
-      background: #ff4e50;
+      background: $red;
       color: #fff;
       font-family: $MonBold;
       font-weight: bold;
       font-size: 14px;
-      letter-spacing: 0.4px;
       cursor: pointer;
     }
   }
@@ -347,7 +326,7 @@
 
 .redline{
   height: 5px;
-  background: #ff4e50;
+  background: $red;
 }
 
 footer{
@@ -356,27 +335,24 @@ footer{
     float: left;
     font-family: $MonBold;
     font-weight: bold;
-    letter-spacing: 0.8px;
-    color: #ff4e50;
+    color: $red;
     text-decoration: none;
   }
   .company, .partners{
     float: left;
     width: 140px;
-    letter-spacing: 0.5px;
     margin-bottom: 35px;
     &__title{
       font-family: $MonBold;
       font-weight: bold;
-      margin-bottom: 14px;
+      margin-bottom: 11px;
     }
     &__link{
       display: block;
-      margin-top: 8px;
-      letter-spacing: -0.2px;
+      margin-top: 5px;
       text-decoration: none;
       color: #666;
-      font-family: 'Roboto-Light', sans-serif;;
+      font-family: $Roboto;
       font-weight: normal;
       font-size: 14px;
       &:hover{color: #bbb;}

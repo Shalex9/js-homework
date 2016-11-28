@@ -13,7 +13,7 @@
       align-items: center;
       .logo{
         font-size: 20px;
-        padding-top: 5px;
+        padding-top: 4px;
       }
       .header__list{
         .header__list-item{
@@ -27,19 +27,20 @@
     }
     .textBox{
       width: 505px;
-      margin-top: 143px;
+      margin-top: 141px;
       &__title{
         font-size: 50px;
-        line-height: 61px;
+        line-height: 62px;
+        letter-spacing: 1.4px;
       }
       &__text{
         font-size: 24px;
-        margin-top: 25px;
+        margin-top: 22px;
         // margin-left: 93px;
       }
       &__button{
         font-size: 14px;
-        width: 220px;
+        width: 225px;
         height: 40px;
         line-height: 40px;
         margin-top: 34px;
@@ -54,7 +55,8 @@
     margin: $center;
     .title{
       font-size: 22px;
-      margin-top: 95px;
+      margin-top: 94px;
+      margin-left: -5px;
     }
     .carousel-box{
       margin-top: 34px;
@@ -84,26 +86,46 @@
             padding: 19px;
             padding-top: 153px;
             .slider__info-box{
-              height: 175px;
+              height: 163px;
               .slider__info-button{
                 font-size: 10px;
                 width: 70px;
                 height: 20px;
                 line-height: 20px;
                 border-radius: 10px;
+                padding-left: 5px;
               }
               .slider__info-title{
+                margin-top: -2px;
                 font-size: 24px;
                 padding-top: 17px;
               }
               .slider__info-text{
                 font-size: 14px;
-                padding-top: 14px;
+                padding-top: 11px;
+                line-height: 17px;
               }
             } //slider__info-box
           } //slider__content-box
         } //slider__box
-      } //carousel
+      } //carousel-1 carousel-2 carousel-3
+      .carousel-2{
+        .slider__content-box{
+          .slider__info-box{
+            width: 261px;
+            .slider__info-button{
+              margin-top: 52px;
+            }
+            .slider__info-title{
+              margin-top: -3px;
+            }
+            .slider__info-text{
+              margin-top: -2px;
+              letter-spacing: 0.1px;
+            }
+          }
+        }
+      } //carousel-2
     } //carousel-box
   } //content
 } //works
@@ -112,8 +134,8 @@
   width: 940px;
   h1{
     font-size: 22px;
-    margin-top: 96px;
-    letter-spacing: 0.8px;
+    margin-top: 95px;
+    margin-left: -5px;
   }
   .blockPartners{
     height: 270px;
@@ -146,15 +168,14 @@
 .search{
   width: 413px;
   height: 160px;
-  margin-top: 80px;
+  margin-top: 79px;
   h1{
     font-size: 22px;
     margin-left: -4px;
   }
   h4{
     font-size: 18px;
-    margin-top: 33px;
-    letter-spacing: -0.2px;
+    margin-top: 30px;
     margin-left: -4px;
   }
   .form{
@@ -166,14 +187,14 @@
   }
 }
 
-.redline{margin-top: 97px;}
+.redline{margin-top: 98px;}
 
 footer{
-  padding-top: 36px;
+  padding-top: 35px;
   width: 940px;
   .logo--footer{
     font-size: 15px;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.4px;
     width: 220px;
   }
   .company, .partners{
@@ -183,7 +204,7 @@ footer{
   }
   .designer{
     width: 110px;
-    &__text{}
-    &__icon{}
+    &__text{margin-top: 1px;}
+    &__icon{margin-top: 7px;}
   }
 }
