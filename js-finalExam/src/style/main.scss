@@ -42,7 +42,7 @@
       .header__list{
         display: flex;
         justify-content: flex-end;
-        .header__list__item{
+        .header__list-item{
           font-family: $MonBold;
           font-weight: bold;
           box-sizing: border-box;
@@ -258,7 +258,6 @@
 
 .masonry{
   height: 1140px;
-  background: #eee;
   margin: $center;
   h1{
     font-family: $MonBold;
@@ -270,24 +269,25 @@
   }
   .grid {
     margin-top: 34px;
-    background: #DDD;
-    max-width: 940px;
     &:after {
     content: '';
     display: block;
     clear: both;
     }
-    .grid-item {
+    .grid-item,
+    .grid-sizer {
+      width: 32%;
+    }
+    .grid-item{
     float: left;
-    width: 32%;
     height: 312px;
-    border-radius: 4px;
+    border-radius: 5px;
     background: #fff;
-    border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.7);
+    background-position: center;
+    background-size: cover;
     overflow: hidden;
       .grid-item__title{
-        background: rgba(200, 200, 200, 0.4);
+        // background: rgba(200, 200, 200, 0.4);
         margin: 0 auto;
         color: #fff;
         font-size: 30px;
@@ -327,7 +327,7 @@
       letter-spacing: 0.3px;
       border: 1px solid #ccc;
       border-radius: 3px;
-      color: #ccc;
+      color: #000;
     }
     &__button{
       margin-right: 3px;
@@ -384,6 +384,7 @@ footer{
   }
   .designer{
     float: right;
+    text-decoration: none;
     &__text{
       font-family: $MonBold;
       font-weight: bold;

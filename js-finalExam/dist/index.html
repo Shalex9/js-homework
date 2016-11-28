@@ -12,12 +12,6 @@
     <!--[if lt IE 9]>
 <script src="js/ie.libs.min.js"></script>
 <![endif]-->
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-    <script src="js/slider-myPlugin.js"></script>
-    <script src="js/packery-mode.pkgd.js"></script>
-    <script src="js/main.js"></script>
 </head>
 <body>
   <header class="header">
@@ -25,8 +19,8 @@
       <div class="header__menu">
         <a class="logo" href="#">URLAUBSGLÜCK</a>
         <div class="header__list">
-          <a class="header__list__item" href="#">Log in</a>
-          <a class="header__list__item" href="#">Sing up</a>
+          <a class="header__list-item" href="#">Log in</a>
+          <a class="header__list-item" href="#">Sing up</a>
         </div>
       </div>
       <div class="textBox">
@@ -141,21 +135,14 @@
   <section class="masonry">
     <h1>Discover holiday activity ideas</h1>
     <div class="grid">
-      <!-- <script type="text/html" id='wrapper'>
-        <% for (var i=0; i<7; i++) { %>
-        <div class="grid-item">
-            <h3><%= hits[i].user %></h3>
-            <h5><span class="text">downloads: </span><%= hits[i].downloads %></h5>
-        </div>
-        <% }; %>
-      </script> -->
-      <!-- <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item grid-item--width2 ">5</div>
-      <div class="grid-item grid-item--width2">6</div>
-      <div class="grid-item">7</div> -->
+      <div class="gutter-sizer"></div>
+      <div class="grid-item image1"></div>
+      <div class="grid-item image2"></div>
+      <div class="grid-item image3"></div>
+      <div class="grid-item image4"></div>
+      <div class="grid-item grid-item--width2 image5"></div>
+      <div class="grid-item grid-item--width2 image6"></div>
+      <div class="grid-item image7"></div>
     </div>
   </section>
 
@@ -182,23 +169,18 @@
     <div class="partners">
       <p class="partners__title">Partners</p>
     </div>
-    <div class="designer">
+    <a class="designer" href="#">
       <p class="designer__text">DESIGNED BY</p>
       <img class="designer__icon" src="img/designerIcon.png" alt="">
-    </div>
+    </a>
   </footer>
-<!-- Масонри скрипт - почему-то работает только здесь, в main.js не работает -->
-  <script type="text/javascript">
-      $('.grid').isotope({
-        layoutMode: 'packery',
-        itemSelector: '.grid-item',
-        // percentPosition: true,
-        packery: {
-          // gutter: '.gutter-sizer'
-          gutter: 18
-        }
-      });
-  </script>
 
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="js/packery-mode.pkgd.js"></script>
+  <script src="js/imagesloaded.pkgd.js"></script>
+  <script src="js/slider-myPlugin.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

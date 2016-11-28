@@ -86,7 +86,7 @@ The `sprites` mixin generates identical output to the CSS template
         -webkit-box-pack: end;
             -ms-flex-pack: end;
                 justify-content: flex-end; }
-        .header__content .header__menu .header__list .header__list__item {
+        .header__content .header__menu .header__list .header__list-item {
           font-family: "Montserrat-Bold", sans-serif;
           font-weight: bold;
           box-sizing: border-box;
@@ -97,7 +97,7 @@ The `sprites` mixin generates identical output to the CSS template
           border-radius: 20px;
           line-height: 36px;
           text-align: center; }
-          .header__content .header__menu .header__list .header__list__item:hover {
+          .header__content .header__menu .header__list .header__list-item:hover {
             border: 2px solid #fff; }
     .header__content .textBox {
       margin: 0 auto;
@@ -332,7 +332,6 @@ The `sprites` mixin generates identical output to the CSS template
 
 .masonry {
   height: 1140px;
-  background: #eee;
   margin: 0 auto; }
   .masonry h1 {
     font-family: "Montserrat-Bold", sans-serif;
@@ -342,24 +341,23 @@ The `sprites` mixin generates identical output to the CSS template
     text-align: center;
     letter-spacing: 0.6px; }
   .masonry .grid {
-    margin-top: 34px;
-    background: #DDD;
-    max-width: 940px; }
+    margin-top: 34px; }
     .masonry .grid:after {
       content: '';
       display: block;
       clear: both; }
+    .masonry .grid .grid-item,
+    .masonry .grid .grid-sizer {
+      width: 32%; }
     .masonry .grid .grid-item {
       float: left;
-      width: 32%;
       height: 312px;
-      border-radius: 4px;
+      border-radius: 5px;
       background: #fff;
-      border: 2px solid #333;
-      border-color: rgba(0, 0, 0, 0.7);
+      background-position: center;
+      background-size: cover;
       overflow: hidden; }
       .masonry .grid .grid-item .grid-item__title {
-        background: rgba(200, 200, 200, 0.4);
         margin: 0 auto;
         color: #fff;
         font-size: 30px;
@@ -393,7 +391,7 @@ The `sprites` mixin generates identical output to the CSS template
     letter-spacing: 0.3px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    color: #ccc; }
+    color: #000; }
   .search .form__button {
     margin-right: 3px;
     width: 160px;
@@ -441,7 +439,8 @@ footer {
       footer .company__link:hover, footer .partners__link:hover {
         color: #bbb; }
   footer .designer {
-    float: right; }
+    float: right;
+    text-decoration: none; }
     footer .designer__text {
       font-family: "Montserrat-Bold", sans-serif;
       font-weight: bold;

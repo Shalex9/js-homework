@@ -61,10 +61,10 @@ The `sprites` mixin generates identical output to the CSS template
       .header__content .header__menu .logo {
         font-size: 20px;
         padding-top: 5px; }
-      .header__content .header__menu .header__list .header__list__item {
+      .header__content .header__menu .header__list .header__list-item {
         font-size: 14px;
         margin-right: 1px; }
-        .header__content .header__menu .header__list .header__list__item:first-child {
+        .header__content .header__menu .header__list .header__list-item:first-child {
           margin-right: -3px; }
     .header__content .textBox {
       width: 505px;
