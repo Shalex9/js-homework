@@ -8,16 +8,11 @@
     width: 940px;
     .header__menu{
       padding-top: 38px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       .logo{
-        font-size: 20px;
         padding-top: 4px;
       }
       .header__list{
         .header__list-item{
-          font-size: 14px;
           margin-right: 1px;
           &:first-child{
             margin-right: -3px;
@@ -31,18 +26,13 @@
       &__title{
         font-size: 50px;
         line-height: 62px;
-        letter-spacing: 1.4px;
       }
       &__text{
         font-size: 24px;
         margin-top: 22px;
-        // margin-left: 93px;
       }
       &__button{
-        font-size: 14px;
         width: 225px;
-        height: 40px;
-        line-height: 40px;
         margin-top: 34px;
       }
     } //end textBox
@@ -54,7 +44,6 @@
     width: 940px;
     margin: $center;
     .title{
-      font-size: 22px;
       margin-top: 94px;
       margin-left: -5px;
     }
@@ -77,7 +66,8 @@
               .slider__img{
                 height: 100%;
                 position: relative;
-                z-index: 1;
+                z-index: 1;                
+                &:first-child{margin-left: -148px;}
               }
             } //slider__elem
           } //slider__list
@@ -86,14 +76,6 @@
             padding-top: 153px;
             .slider__info-box{
               height: 163px;
-              .slider__info-button{
-                font-size: 10px;
-                width: 70px;
-                height: 20px;
-                line-height: 20px;
-                border-radius: 10px;
-                padding-left: 5px;
-              }
               .slider__info-title{
                 margin-top: -2px;
                 font-size: 24px;
@@ -132,26 +114,17 @@
 .partners{
   width: 940px;
   h1{
-    font-size: 22px;
     margin-top: 95px;
     margin-left: -5px;
   }
   .blockPartners{
     height: 270px;
     margin-top: 31px;
-    display: flex;
     .box-1, .box-2, .box-3, .box-4{
       &:not(:first-child){margin-left: 20px;};
-      .box__name{
-        font-size: 14px;
-      }
-      .box__comment{
-        font-size: 14px;
-      }
     }
   }
   button{
-    font-size: 14px;
     margin: 3px auto;
   }
 }
@@ -169,20 +142,14 @@
   height: 160px;
   margin-top: 79px;
   h1{
-    font-size: 22px;
     margin-left: -4px;
   }
   h4{
-    font-size: 18px;
     margin-top: 30px;
     margin-left: -4px;
   }
   .form{
-    display: flex;
-    justify-content: space-between;
     margin-top: 37px;
-    &__input{}
-    &__button{}
   }
 }
 
@@ -191,15 +158,8 @@
 footer{
   padding-top: 35px;
   width: 940px;
-  .logo--footer{
-    font-size: 15px;
-    letter-spacing: 1.4px;
-    width: 220px;
-  }
   .company, .partners{
     margin-left: 19px;
-    &__title{font-size: 14px;}
-    &__link{}
   }
   .designer{
     width: 110px;

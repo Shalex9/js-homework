@@ -9,15 +9,19 @@
 }
 
 .header{
-  background: url('../img/main.jpg') center center;
+  background: url('../img/main.jpg') no-repeat center center;
   width: 100%;
   &__content{
     margin: $center;
     .header__menu{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       color: #fff;
       .logo{
         font-family: $MonBold;
         font-weight: bold;
+        font-size: 20px;
         letter-spacing: 0.8px;
         text-decoration: none;
         color: #fff;
@@ -28,6 +32,7 @@
         .header__list-item{
           font-family: $MonBold;
           font-weight: bold;
+          font-size: 14px;
           box-sizing: border-box;
           text-decoration: none;
           color: #fff;
@@ -48,6 +53,7 @@
       &__title{
         font-family: $MonBold;
         color: #fff;
+        letter-spacing: 1.4px;
       }
       &__text{
         font-family: $Roboto;
@@ -57,6 +63,9 @@
         display: block;
         font-family: $MonBold;
         font-weight: bold;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
         text-decoration: none;
         color: #fff;
         border-radius: 20px;
@@ -72,6 +81,7 @@
     .title{
       font-family: $MonBold;
       text-align: center;
+      font-size: 22px;
     }
     .carousel-box{
       display: flex;
@@ -84,6 +94,7 @@
         .slider__box{
           height: 400px;
           width: 300px;
+          border-radius: 4px;
           overflow: hidden;
           float: left;
           position: relative;
@@ -99,10 +110,8 @@
               list-style: none;
               height: 400px;
               .slider__img{
-                height: 100%;
                 position: relative;
                 z-index: 1;
-                &:first-child{margin-left: -148px;}
               }
             } //slider__elem
           } //slider__list
@@ -128,13 +137,19 @@
             .slider__info-box{
               .slider__info-button{
                 display: block;
+                width: 70px;
+                height: 20px;
+                line-height: 20px;
                 font-family: $MonBold;
                 font-weight: 300;
+                font-size: 10px;
                 background: $red;
+                border-radius: 10px;
                 text-decoration: none;
                 color: #fff;
                 text-align: center;
                 letter-spacing: 2px;
+                padding-left: 5px;
               }
               .slider__info-title{
                 font-family: $MonBold;
@@ -157,9 +172,11 @@
   h1{
     font-family: $MonBold;
     font-weight: bold;
+    font-size: 22px;
     text-align: center;
   }
   .blockPartners{
+    display: flex;
     .box-1, .box-2, .box-3, .box-4{
       width: 220px;
       height: 225px;
@@ -178,12 +195,14 @@
       .box__name{
         font-family: $MonBold;
         font-weight: bold;
+        font-size: 14px;
         text-align: center;
         margin-top: 17px;
       }
       .box__comment{
         font-family: $Roboto;
         font-weight: normal;
+        font-size: 14px;
         color: #666;
         margin-top: 12px;
         line-height: 17px;
@@ -226,6 +245,7 @@
     border-radius: 20px;
     font-family: $MonBold;
     font-weight: bold;
+    font-size: 14px;
     color: $red;
   }
 }
@@ -291,14 +311,18 @@
   h1{
     font-family: $MonBold;
     font-weight: bold;
+    font-size: 22px;
     text-align: center;
   }
   h4{
     font-family: $Roboto;
     font-weight: 200;
+    font-size: 18px;
     text-align: center;
   }
   .form{
+    display: flex;
+    justify-content: space-between;
     &__input{
       width: 240px;
       height: 40px;
@@ -311,6 +335,7 @@
     &__button{
       margin-right: 3px;
       width: 160px;
+      height: 40px;
       border: none;
       border-radius: 20px;
       background: $red;
@@ -334,6 +359,9 @@ footer{
     float: left;
     font-family: $MonBold;
     font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1.4px;
+    width: 220px;
     color: $red;
     text-decoration: none;
   }
@@ -344,6 +372,7 @@ footer{
     &__title{
       font-family: $MonBold;
       font-weight: bold;
+      font-size: 14px;
       margin-bottom: 11px;
     }
     &__link{

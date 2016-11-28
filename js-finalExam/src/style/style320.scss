@@ -1,0 +1,294 @@
+@import "variables";
+@import "../img/sprite";
+
+
+.header{
+  height: 549px;
+  background-size: cover;
+  background-position: -417px -9px;
+  &__content{
+    width: 320px;
+    .header__menu{
+      padding-top: 20px;
+      flex-flow: wrap;
+      flex-direction: column-reverse;
+      height: 195px;
+      .logo{margin-left: -2px}
+      .header__list{
+        justify-content: center;
+        margin-left: -2px;
+        .header__list-item{
+          margin-right: -4px;
+          &:last-child{
+            margin-right: 26px;
+          }
+        }
+      }
+    }
+    .textBox{
+      margin-top: 27px;
+      &__title{
+        font-size: 28px;
+        line-height: 36px;
+        margin-left: 2px;
+      }
+      &__text{
+        font-size: 18px;
+        padding-top: 9px;
+        line-height: 22px;
+        width: 228px;
+        margin: $center;
+      }
+      &__button{
+        width: 280px;
+        margin-top: 15px;
+      }
+    } //end textBox
+  } //end content
+} //end header
+
+.works{
+  width: 320px;
+  .content{
+    width: 300px;
+    margin: $center;
+    .title{
+      margin-top: 24px;
+      margin-left: -2px;
+    }
+    .carousel-box{
+      margin-top: 14px;
+      flex-direction: column;
+      .carousel-1,
+      .carousel-2,
+      .carousel-3{
+        height: 240px;
+        margin-bottom: 10px;
+        .slider__box{
+          height: 240px;
+          .slider__list{
+            width: 300px;
+            .slider__elem{
+              display: block;
+              margin-right: 0px;
+              float: none;
+              list-style: none;
+              height: 240px;
+              &:nth-child(2),
+              &:last-child{display: none;}
+              .slider__img{
+                position: relative;
+                z-index: 1;
+              }
+            } //slider__elem
+          } //slider__list
+          .slider__box-gradient{top: 0;}
+          .slider__content-box{
+            height: 240px;
+            top: 0;
+            .slider__arrow-box{display: none;}
+            .slider__info-box{
+              height: 163px;
+              .slider__info-button{
+                margin-left: 1px;
+              }
+              .slider__info-title{
+                margin-top: -2px;
+                font-size: 24px;
+                padding-top: 17px;
+              }
+              .slider__info-text{
+                font-size: 14px;
+                padding-top: 11px;
+                line-height: 17px;
+              }
+            } //slider__info-box
+          } //slider__content-box
+        } //slider__box
+      } //carousel-1 carousel-2 carousel-3
+      .carousel-1, .carousel-3{
+        .slider__list{
+          .slider__elem{
+            .slider__img{
+              width: 138%;
+              height: 117%;
+              margin-top: -30px;
+              margin-left: -65px;
+            }
+          }
+        }
+        .slider__content-box{padding: 69px 19px}
+      }
+      .carousel-3{
+        .slider__list{
+          .slider__elem{
+            .slider__img{
+              margin-top: -26px;
+              margin-left: -58px;
+            }
+          }
+        }
+      }
+      .carousel-2{
+        .slider__list{
+          .slider__elem{
+            .slider__img{
+              width: 135%;
+              height: 113%;
+              top: -21px;
+              left: -32px;
+              margin-left: 0;
+              margin-top: 0;
+            }
+          }
+        }
+        .slider__content-box{
+          padding: 99px 19px;
+          .slider__info-box{
+            width: 261px;
+            .slider__info-button{
+              padding-left: 2px;
+              padding-top: 1px;
+            }
+            .slider__info-title{
+              margin-top: -3px;
+            }
+            .slider__info-text{
+              margin-top: -1px;
+              letter-spacing: 0.1px;
+            }
+          }
+        }
+      } //carousel-2
+    } //carousel-box
+  } //content
+} //works
+
+.partners{
+  width: 320px;
+  h1{
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-left: 11px;
+    width: 290px;
+  }
+  .blockPartners{
+    height: 945px;
+    width: 270px;
+    margin: $center;
+    margin-top: 12px;
+    flex-direction: column;
+    justify-content: space-between;
+    .box-1, .box-2, .box-3, .box-4{
+      margin: $center;
+      .box__name,
+      .box__comment{margin-left: -2px}
+    }
+    .box-4{
+      .box__name{margin-left: -5px}
+      .box__comment{margin-left: -7px}
+    }
+  }
+  button{
+    margin: 5px auto;
+    margin-left: 17px;
+    width: 280px;
+  }
+}
+
+.masonry{
+  width: 300px;
+  height: 1000px;
+  h1{
+    padding-top: 28px;
+    margin-left: 15px;
+  }
+  .grid{
+    margin: $center;
+    margin-top: 14px;
+    margin-left: 10px;
+    .grid-item,
+    .grid-sizer {
+      width: 100%;
+    }
+    .grid-item{
+      height: 120px;
+      margin-bottom: 4px;
+      .grid-item__title{line-height: 120px}
+    }
+    .image5, .image6{width: 100%;}
+    .gutter-sizer { width: 2%; }
+  }
+}
+
+.search{
+  width: 300px;
+  height: 200px;
+  margin: $center;
+  margin-top: 31px;
+  h1{
+    margin-left: 13px;
+  }
+  h4{
+    margin-top: 8px;
+    margin-left: 13px;
+  }
+  .form{
+    flex-direction: column;
+    height: 90px;
+    margin-top: 15px;
+    &__input{
+      width: 280px;
+      margin-left: 16px;
+      padding: 10px 15px;
+    }
+    &__button{
+      margin-left: 16px;
+      width: 280px;
+    }
+  }
+}
+
+.redline{margin-top: 31px;}
+
+footer{
+  padding-top: 15px;
+  width: 218px;
+  .logo--footer{
+    text-align: center;
+    padding-left: 12px;
+  }
+  .company, .partners{
+    width: 220px;
+    margin: 30px 6px;
+    display: block;
+    float: none;
+    &__title{
+      text-align: center;
+      margin-bottom: -4px;
+    }
+    &__link{
+      display: inline-block;
+      margin-left: 10px;
+      &:nth-child(2){margin-left: 13px;}
+    }
+  }
+  .partners{
+    margin-top: -18px;
+    margin-bottom: 16px;
+  }
+  .designer{
+    margin: $center;
+    display: block;
+    float: none;
+    width: 120px;
+    padding-left: 12px;
+    &__text{
+      text-align: center;
+      float: none;
+      padding-top: 1px;
+      padding-left: 3px;
+    }
+    &__icon{margin-top: 7px;}
+  }
+}

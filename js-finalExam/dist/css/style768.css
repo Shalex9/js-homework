@@ -93,21 +93,10 @@ The `sprites` mixin generates identical output to the CSS template
   .header__content {
     width: 940px; }
     .header__content .header__menu {
-      padding-top: 38px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      padding-top: 38px; }
       .header__content .header__menu .logo {
-        font-size: 20px;
         padding-top: 4px; }
       .header__content .header__menu .header__list .header__list-item {
-        font-size: 14px;
         margin-right: 1px; }
         .header__content .header__menu .header__list .header__list-item:first-child {
           margin-right: -3px; }
@@ -116,23 +105,18 @@ The `sprites` mixin generates identical output to the CSS template
       margin-top: 141px; }
       .header__content .textBox__title {
         font-size: 50px;
-        line-height: 62px;
-        letter-spacing: 1.4px; }
+        line-height: 62px; }
       .header__content .textBox__text {
         font-size: 24px;
         margin-top: 22px; }
       .header__content .textBox__button {
-        font-size: 14px;
         width: 225px;
-        height: 40px;
-        line-height: 40px;
         margin-top: 34px; }
 
 .works .content {
   width: 940px;
   margin: 0 auto; }
   .works .content .title {
-    font-size: 22px;
     margin-top: 94px;
     margin-left: -5px; }
   .works .content .carousel-box {
@@ -157,6 +141,10 @@ The `sprites` mixin generates identical output to the CSS template
           height: 100%;
           position: relative;
           z-index: 1; }
+          .works .content .carousel-box .carousel-1 .slider__box .slider__list .slider__elem .slider__img:first-child,
+          .works .content .carousel-box .carousel-2 .slider__box .slider__list .slider__elem .slider__img:first-child,
+          .works .content .carousel-box .carousel-3 .slider__box .slider__list .slider__elem .slider__img:first-child {
+            margin-left: -148px; }
     .works .content .carousel-box .carousel-1 .slider__box .slider__content-box,
     .works .content .carousel-box .carousel-2 .slider__box .slider__content-box,
     .works .content .carousel-box .carousel-3 .slider__box .slider__content-box {
@@ -166,15 +154,6 @@ The `sprites` mixin generates identical output to the CSS template
       .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box,
       .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box {
         height: 163px; }
-        .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-button,
-        .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-button,
-        .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-button {
-          font-size: 10px;
-          width: 70px;
-          height: 20px;
-          line-height: 20px;
-          border-radius: 10px;
-          padding-left: 5px; }
         .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-title,
         .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-title,
         .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-title {
@@ -200,23 +179,14 @@ The `sprites` mixin generates identical output to the CSS template
 .partners {
   width: 940px; }
   .partners h1 {
-    font-size: 22px;
     margin-top: 95px;
     margin-left: -5px; }
   .partners .blockPartners {
     height: 270px;
-    margin-top: 31px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    margin-top: 31px; }
     .partners .blockPartners .box-1:not(:first-child), .partners .blockPartners .box-2:not(:first-child), .partners .blockPartners .box-3:not(:first-child), .partners .blockPartners .box-4:not(:first-child) {
       margin-left: 20px; }
-    .partners .blockPartners .box-1 .box__name, .partners .blockPartners .box-2 .box__name, .partners .blockPartners .box-3 .box__name, .partners .blockPartners .box-4 .box__name {
-      font-size: 14px; }
-    .partners .blockPartners .box-1 .box__comment, .partners .blockPartners .box-2 .box__comment, .partners .blockPartners .box-3 .box__comment, .partners .blockPartners .box-4 .box__comment {
-      font-size: 14px; }
   .partners button {
-    font-size: 14px;
     margin: 3px auto; }
 
 .masonry {
@@ -230,19 +200,11 @@ The `sprites` mixin generates identical output to the CSS template
   height: 160px;
   margin-top: 79px; }
   .search h1 {
-    font-size: 22px;
     margin-left: -4px; }
   .search h4 {
-    font-size: 18px;
     margin-top: 30px;
     margin-left: -4px; }
   .search .form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin-top: 37px; }
 
 .redline {
@@ -251,14 +213,8 @@ The `sprites` mixin generates identical output to the CSS template
 footer {
   padding-top: 35px;
   width: 940px; }
-  footer .logo--footer {
-    font-size: 15px;
-    letter-spacing: 1.4px;
-    width: 220px; }
   footer .company, footer .partners {
     margin-left: 19px; }
-    footer .company__title, footer .partners__title {
-      font-size: 14px; }
   footer .designer {
     width: 110px; }
     footer .designer__text {
@@ -266,58 +222,62 @@ footer {
     footer .designer__icon {
       margin-top: 7px; }
 
-.header__content {
-  width: 675px; }
-  .header__content .header__menu .logo {
-    padding-left: 4px; }
-  .header__content .textBox__title {
-    line-height: 63px;
-    margin-top: -1px; }
-  .header__content .textBox__button {
-    margin-top: 32px; }
+.header {
+  margin-left: 7px; }
+  .header__content {
+    width: 675px; }
+    .header__content .header__menu .logo {
+      padding-left: 4px; }
+    .header__content .textBox__title {
+      line-height: 63px;
+      margin-top: -1px; }
+    .header__content .textBox__button {
+      margin-top: 32px; }
 
-.works .content {
-  width: 748px; }
-  .works .content .title {
-    margin-left: 10px; }
-  .works .content .carousel-box .carousel-1,
-  .works .content .carousel-box .carousel-2,
-  .works .content .carousel-box .carousel-3 {
-    width: 236px; }
-    .works .content .carousel-box .carousel-1 .slider__box,
-    .works .content .carousel-box .carousel-2 .slider__box,
-    .works .content .carousel-box .carousel-3 .slider__box {
-      width: 236px;
-      border-radius: 4px; }
-      .works .content .carousel-box .carousel-1 .slider__box .slider__list .slider__elem .slider__img:first-child,
-      .works .content .carousel-box .carousel-2 .slider__box .slider__list .slider__elem .slider__img:first-child,
-      .works .content .carousel-box .carousel-3 .slider__box .slider__list .slider__elem .slider__img:first-child {
-        margin-left: -188px; }
-      .works .content .carousel-box .carousel-1 .slider__box .slider__content-box,
-      .works .content .carousel-box .carousel-2 .slider__box .slider__content-box,
-      .works .content .carousel-box .carousel-3 .slider__box .slider__content-box {
-        padding: 20px;
-        width: 236px;
-        padding-top: 39px; }
-  .works .content .carousel-box .carousel-1, .works .content .carousel-box .carousel-2 {
-    margin-right: 20px; }
-  .works .content .carousel-box .carousel-1 .slider__content-box .slider__info-box, .works .content .carousel-box .carousel-3 .slider__content-box .slider__info-box {
-    margin-top: 117px; }
-    .works .content .carousel-box .carousel-1 .slider__content-box .slider__info-box .slider__info-text, .works .content .carousel-box .carousel-3 .slider__content-box .slider__info-box .slider__info-text {
-      width: 200px;
-      letter-spacing: -0.1px; }
-  .works .content .carousel-box .carousel-2 .slider__content-box .slider__arrow-box {
-    width: 215px;
-    margin-left: -9px; }
-  .works .content .carousel-box .carousel-2 .slider__content-box .slider__info-box {
-    width: 195px;
-    margin-top: 165px; }
+.works {
+  margin-left: 9px; }
+  .works .content {
+    width: 748px; }
+    .works .content .title {
+      margin-left: 10px; }
+    .works .content .carousel-box .carousel-1,
+    .works .content .carousel-box .carousel-2,
+    .works .content .carousel-box .carousel-3 {
+      width: 236px; }
+      .works .content .carousel-box .carousel-1 .slider__box,
+      .works .content .carousel-box .carousel-2 .slider__box,
+      .works .content .carousel-box .carousel-3 .slider__box {
+        width: 236px; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__list .slider__elem .slider__img:first-child,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__list .slider__elem .slider__img:first-child,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__list .slider__elem .slider__img:first-child {
+          margin-left: -188px; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__content-box,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__content-box,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__content-box {
+          padding: 20px;
+          width: 236px;
+          padding-top: 39px; }
+    .works .content .carousel-box .carousel-1, .works .content .carousel-box .carousel-2 {
+      margin-right: 20px; }
+    .works .content .carousel-box .carousel-1 .slider__content-box .slider__info-box, .works .content .carousel-box .carousel-3 .slider__content-box .slider__info-box {
+      margin-top: 117px; }
+      .works .content .carousel-box .carousel-1 .slider__content-box .slider__info-box .slider__info-text, .works .content .carousel-box .carousel-3 .slider__content-box .slider__info-box .slider__info-text {
+        width: 200px;
+        letter-spacing: -0.1px; }
+    .works .content .carousel-box .carousel-2 .slider__content-box .slider__arrow-box {
+      width: 215px;
+      margin-left: -9px; }
+    .works .content .carousel-box .carousel-2 .slider__content-box .slider__info-box {
+      width: 195px;
+      margin-top: 165px; }
 
 .partners {
-  width: 490px; }
+  width: 490px;
+  padding-left: 7px; }
   .partners h1 {
     margin-top: 96px;
-    margin-left: -3px; }
+    margin-left: 4px; }
   .partners .blockPartners {
     height: 528px;
     -webkit-box-pack: justify;
@@ -332,10 +292,6 @@ footer {
     .partners .blockPartners .box-1 .box__img, .partners .blockPartners .box-2 .box__img, .partners .blockPartners .box-3 .box__img, .partners .blockPartners .box-4 .box__img {
       width: 120px;
       height: 121px; }
-    .partners .blockPartners .box-1 .box__name, .partners .blockPartners .box-2 .box__name, .partners .blockPartners .box-3 .box__name, .partners .blockPartners .box-4 .box__name {
-      font-size: 14px; }
-    .partners .blockPartners .box-1 .box__comment, .partners .blockPartners .box-2 .box__comment, .partners .blockPartners .box-3 .box__comment, .partners .blockPartners .box-4 .box__comment {
-      font-size: 14px; }
     .partners .blockPartners .box-3, .partners .blockPartners .box-4 {
       margin-top: -12px; }
       .partners .blockPartners .box-3 .box__name, .partners .blockPartners .box-4 .box__name {
@@ -343,24 +299,26 @@ footer {
       .partners .blockPartners .box-3 .box__comment, .partners .blockPartners .box-4 .box__comment {
         margin-top: 12px; }
   .partners button {
-    font-size: 14px;
-    margin: 3px auto; }
+    margin: 3px 150px; }
 
 .masonry {
   width: 100%;
-  padding: 0 3px; }
+  padding: 0 3px;
+  margin-left: 7px; }
   .masonry h1 {
     padding-top: 93px;
     margin-left: 1px; }
+  .masonry .grid .grid-item {
+    margin-bottom: 6px; }
 
 .search {
   width: 416px;
   margin-top: 78px; }
   .search h1 {
-    margin-left: -1px; }
+    margin-left: 13px; }
   .search h4 {
     margin-top: 29px;
-    margin-left: 0px; }
+    margin-left: 15px; }
   .search .form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -369,10 +327,12 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 37px;
-    padding-left: 4px; }
+    padding-left: 11px; }
     .search .form__input {
       padding: 10px 13px;
       letter-spacing: 0.4px; }
+    .search .form__button {
+      margin-right: -4px; }
 
 .redline {
   margin-top: 97px; }
@@ -381,8 +341,11 @@ footer {
   padding-top: 35px;
   width: 690px; }
   footer .logo--footer {
-    margin-left: 2px; }
+    margin-left: 9px; }
   footer .company {
     margin-left: 6px; }
   footer .partners {
-    margin-left: 31px; }
+    margin-top: 0px;
+    margin-left: 24px; }
+  footer .designer {
+    margin-right: -7px; }
