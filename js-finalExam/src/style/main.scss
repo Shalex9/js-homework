@@ -126,7 +126,6 @@
               .slider__arrow-right{@include sprite($arrow-r); &:hover{cursor: pointer}}
             }
             .slider__info-box{
-              margin-top: 21px;
               .slider__info-button{
                 display: block;
                 font-family: $MonBold;

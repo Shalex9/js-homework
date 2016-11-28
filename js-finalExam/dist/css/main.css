@@ -227,31 +227,27 @@ The `sprites` mixin generates identical output to the CSS template
             .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-right:hover,
             .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-right:hover {
               cursor: pointer; }
-        .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box,
-        .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box,
-        .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box {
-          margin-top: 21px; }
-          .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-button,
-          .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-button,
-          .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-button {
-            display: block;
-            font-family: "Montserrat", sans-serif;
-            font-weight: 300;
-            background: #ff4e50;
-            text-decoration: none;
-            color: #fff;
-            text-align: center;
-            letter-spacing: 2px; }
-          .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-title,
-          .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-title,
-          .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-title {
-            font-family: "Montserrat", sans-serif;
-            color: #fff; }
-          .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-text,
-          .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-text,
-          .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-text {
-            font-family: "Roboto", sans-serif;
-            color: #ccc; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-button,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-button,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-button {
+          display: block;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 300;
+          background: #ff4e50;
+          text-decoration: none;
+          color: #fff;
+          text-align: center;
+          letter-spacing: 2px; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-title,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-title,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-title {
+          font-family: "Montserrat", sans-serif;
+          color: #fff; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box .slider__info-text,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-text,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-text {
+          font-family: "Roboto", sans-serif;
+          color: #ccc; }
 
 .partners {
   margin: 0 auto; }
