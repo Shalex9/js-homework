@@ -2,7 +2,7 @@ define(
   'controller',
   ['model', 'view'],
   function() {
-    function controller(model, view) {
+    function Controller(model, view) {
       var self = this;
 
       view.elements.addBtn.on('click', addItem);
@@ -40,6 +40,6 @@ define(
         view.renderList(model.data);
       };
     }
-    return controller;
+    return Controller;
   }
 );

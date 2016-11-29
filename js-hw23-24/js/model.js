@@ -2,7 +2,7 @@ define(
   'model',
   [],
   function() {
-    function model(data) {
+    function Model(data) {
       var self = this;
       self.data = data;
 
@@ -26,6 +26,6 @@ define(
         return self.data;
       };
     };
-    return model;
+    return Model;
   }
 );
