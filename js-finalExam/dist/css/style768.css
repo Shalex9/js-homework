@@ -148,8 +148,17 @@ The `sprites` mixin generates identical output to the CSS template
     .works .content .carousel-box .carousel-1 .slider__box .slider__content-box,
     .works .content .carousel-box .carousel-2 .slider__box .slider__content-box,
     .works .content .carousel-box .carousel-3 .slider__box .slider__content-box {
+      width: 300px;
       padding: 19px;
       padding-top: 153px; }
+      .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__arrow-box,
+      .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__arrow-box,
+      .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__arrow-box {
+        margin-left: 2px; }
+        .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-right,
+        .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-right,
+        .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__arrow-box .slider__arrow-right {
+          margin-right: 3px; }
       .works .content .carousel-box .carousel-1 .slider__box .slider__content-box .slider__info-box,
       .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box,
       .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box {
@@ -164,16 +173,28 @@ The `sprites` mixin generates identical output to the CSS template
         .works .content .carousel-box .carousel-2 .slider__box .slider__content-box .slider__info-box .slider__info-text,
         .works .content .carousel-box .carousel-3 .slider__box .slider__content-box .slider__info-box .slider__info-text {
           font-size: 14px;
-          padding-top: 11px;
           line-height: 17px; }
+    .works .content .carousel-box .carousel-1 .slider__content-box .slider__info-box, .works .content .carousel-box .carousel-3 .slider__content-box .slider__info-box {
+      margin-left: -1px;
+      margin-top: 21px; }
+      .works .content .carousel-box .carousel-1 .slider__content-box .slider__info-box .slider__info-button, .works .content .carousel-box .carousel-3 .slider__content-box .slider__info-box .slider__info-button {
+        margin-left: 1px; }
+      .works .content .carousel-box .carousel-1 .slider__content-box .slider__info-box .slider__info-text, .works .content .carousel-box .carousel-3 .slider__content-box .slider__info-box .slider__info-text {
+        padding-top: 11px;
+        margin-left: 1px; }
     .works .content .carousel-box .carousel-2 .slider__content-box .slider__info-box {
-      width: 261px; }
+      margin-top: -1px;
+      margin-left: 1px; }
       .works .content .carousel-box .carousel-2 .slider__content-box .slider__info-box .slider__info-button {
-        margin-top: 52px; }
+        margin-top: 52px;
+        margin-left: -1px; }
       .works .content .carousel-box .carousel-2 .slider__content-box .slider__info-box .slider__info-title {
-        margin-top: -3px; }
+        margin-top: -3px;
+        margin-left: -2px; }
       .works .content .carousel-box .carousel-2 .slider__content-box .slider__info-box .slider__info-text {
+        padding-top: 12px;
         margin-top: -2px;
+        margin-left: -2px;
         letter-spacing: 0.1px; }
 
 .partners {

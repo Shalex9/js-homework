@@ -121,7 +121,8 @@ The `sprites` mixin generates identical output to the CSS template
           line-height: 36px;
           text-align: center; }
           .header__content .header__menu .header__list .header__list-item:hover {
-            border: 2px solid #fff; }
+            border: 2px solid #fff;
+            line-height: 32px; }
     .header__content .textBox {
       margin: 0 auto;
       text-align: center; }
