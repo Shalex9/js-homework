@@ -31,7 +31,7 @@ $(function(){
       }
     ]
   };
-localStorage, JSON.stringify, JSON.parse
+// localStorage, JSON.stringify, JSON.parse
   var genString = JSON.stringify(test);
   localStorage.setItem('str', genString);
   genString = localStorage.getItem('str');
@@ -44,9 +44,8 @@ localStorage, JSON.stringify, JSON.parse
 
 
   $("#result").click(function(){
-      var current,k,flag="Тест пройден";
+      var current, k, flag="Тест пройден";
 
-  var ch = $('check'); console.log('check: ', ch);
       for (var i=0;i<test.questions.length;i++){
         k=i+1;
         current ="#block"+ k +" input";
