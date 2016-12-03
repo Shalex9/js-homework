@@ -14,6 +14,9 @@
               if (currentleftValue != maximumOffset) {
                   currentleftValue += 460;
                   thisSliderList.animate({ left : currentleftValue + "px"}, 600, 'easeInBack');
+              } else {
+                  currentleftValue = -920;
+                  thisSliderList.animate({ left : currentleftValue + "px"}, 600, 'easeInBack');
               }
           });
           rightButton.click(function() {
@@ -22,6 +25,9 @@
                 minimumOffset = - ((elementsCount - 1) * pixelsOffset);
               if (currentleftValue != minimumOffset) {
                   currentleftValue -= 460;
+                  thisSliderList.animate({ left : currentleftValue + "px"}, 600, 'easeInBack');
+              } else {
+                  currentleftValue = 0;
                   thisSliderList.animate({ left : currentleftValue + "px"}, 600, 'easeInBack');
               }
           });

@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "./node_modules/gulp/bin/gulp.js"
   },
-  "author": "",
+  "author": "Shalex",
   "license": "ISC",
   "devDependencies": {
     "auto": "^0.1.2",
@@ -18,6 +18,7 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^3.1.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-rigger": "^0.5.8",
@@ -32,5 +33,8 @@
     "isotope-layout": "^3.0.1",
     "isotope-packery": "^2.0.0",
     "masonry-layout": "^4.1.1"
+  },
+  "dependencies": {
+    "hover.css": "^2.0.2"
   }
 }
