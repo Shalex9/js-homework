@@ -25,6 +25,7 @@ $(function() {
             url: 'https://pixabay.com/api/?key=3750037-59b70644a0ea3a4147bb2a2ad&q=' + poisk.join("+") + '&image_type=photo',
             dataType: 'json',
             success: function(data) {
+                $(".form__input").val('');
                 console.log('Объект данных с pixabay: ', data);
                 if (data.hits.length > 0) {
                     for (var i = 0; i < 7; i++) {
@@ -37,6 +38,7 @@ $(function() {
             }
         })
     }
+
 
     function enter(event) {
         if (event.keyCode == 13) {
