@@ -1,0 +1,6 @@
+aside, nav, footer, header, section { display: block }
+
+.textBox__button{
+    background-color: blue;
+    color: green;
+}
