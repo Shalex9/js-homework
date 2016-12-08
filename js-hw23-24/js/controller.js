@@ -5,10 +5,18 @@ define(
     function Controller(model, view) {
       var self = this;
 
+
       view.elements.addBtn.on('click', addItem);
+      view.elements.input.on('keypress', enter);
       view.elements.listContainer.on('click', '.item-delete', removeItem);
       view.elements.listContainer.on('click', '.item-edit', editItem);
 
+      function enter(event) {
+          if (event.keyCode == 13) {
+              addItem();
+          }
+      }
+      
       function addItem() {
         var newItem = view.elements.input.val();
         model.addItem(newItem);
